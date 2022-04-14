@@ -21,6 +21,7 @@ From now on, just run
 
 ```zsh
 cd src
+source env/bin/activate
 flask run
 ```
 will start the project.
