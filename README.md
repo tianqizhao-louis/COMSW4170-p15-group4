@@ -17,3 +17,10 @@ source env/bin/activate
 pip install -r requirements.txt
 flask run
 ```
+From now on, just run 
+
+```zsh
+cd src
+flask run
+```
+will start the project.
