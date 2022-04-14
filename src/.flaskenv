@@ -1,0 +1,2 @@
+export FLASK_APP=asl
+export FLASK_ENV=development
