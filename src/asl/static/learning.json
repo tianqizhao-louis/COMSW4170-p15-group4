@@ -1,0 +1,52 @@
+[
+    {
+        "videoId": 1,
+        "videoName": "Bad",
+        "videoLink": "placeholder"   
+    },
+    {
+        "videoId": 2,
+        "videoName": "Good",
+        "videoLink": "placeholder"   
+    },
+    {
+        "videoId": 3,
+        "videoName": "How are you",
+        "videoLink": "placeholder"   
+    },
+    {
+        "videoId": 4,
+        "videoName": "I am learning ASL",
+        "videoLink": "placeholder"   
+    },
+    {
+        "videoId": 5,
+        "videoName": "Nice to meet you",
+        "videoLink": "placeholder"   
+    },
+    {
+        "videoId": 6,
+        "videoName": "Please",
+        "videoLink": "placeholder"   
+    },
+    {
+        "videoId": 7,
+        "videoName": "See you later",
+        "videoLink": "placeholder"   
+    },
+    {
+        "videoId": 8,
+        "videoName": "Sorry I don't understand",
+        "videoLink": "placeholder"   
+    },
+    {
+        "videoId": 9,
+        "videoName": "Sorry",
+        "videoLink": "placeholder"   
+    },
+    {
+        "videoId": 10,
+        "videoName": "Thank you you are welcome",
+        "videoLink": "placeholder"   
+    }
+]
