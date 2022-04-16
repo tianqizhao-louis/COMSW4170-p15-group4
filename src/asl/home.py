@@ -1,7 +1,8 @@
-from flask import (Blueprint, flash, g, redirect, render_template, request, url_for)
+from flask import (Blueprint, Flask, flash, g, redirect, render_template, request, url_for, json)
+import os
 
 bp = Blueprint('home', __name__)
-
+app = Flask(__name__)
 
 @bp.route('/', methods=["GET"])
 def index():
@@ -9,7 +10,12 @@ def index():
 
 @bp.route('/greetings', methods=["GET"])
 def greeting():
-    return render_template('greetings.html')
+    with open('./asl/static/learning.json') as json_file:
+        data = json.load(json_file)
+        lesson = {}
+        for item in data:
+            lesson[item['videoId']] = item
+    return render_template('greetings.html', lesson=lesson)
 
 @bp.route('/manners', methods=["GET"])
 def manner():
@@ -27,3 +33,8 @@ def farewell():
 def quiz():
     return render_template('quiz.html')
 
+"""
+@bp.route('/greetings/<videoid>', methods=["GET"])
+def greeting_lesson(videoid):
+    return render_template('greetings.html', id=id)
+"""
