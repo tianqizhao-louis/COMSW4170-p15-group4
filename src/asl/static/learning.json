@@ -2,56 +2,56 @@
     {
         "videoId": 1,
         "videoName": "Bad",
-        "videoLink": "https://youtu.be/37lEc2r2gsw"
+        "videoLink": "https://youtube.com/embed/37lEc2r2gsw"
     },
     {
         "videoId": 2,
         "videoName": "Good",
-        "videoLink": "https://youtu.be/4_gXibyFSGI"
+        "videoLink": "https://youtube.com/embed/4_gXibyFSGI"
     },
     {
         "videoId": 3,
         "videoName": "How are you",
-        "videoLink": "https://youtu.be/HqJu6PI5T50"
+        "videoLink": "https://youtube.com/embed/HqJu6PI5T50"
     },
     {
         "videoId": 4,
         "videoName": "I am learning ASL",
-        "videoLink": "https://youtu.be/6dsWDK6UnmM"
+        "videoLink": "https://youtube.com/embed/6dsWDK6UnmM"
     },
     {
         "videoId": 5,
         "videoName": "Nice to meet you",
-        "videoLink": "https://youtu.be/2t_M4JRVq3g"
+        "videoLink": "https://youtube.com/embed/2t_M4JRVq3g"
     },
     {
         "videoId": 6,
         "videoName": "Please",
-        "videoLink": "https://youtu.be/VBr_hnELRqM"
+        "videoLink": "https://youtube.com/embed/VBr_hnELRqM"
     },
     {
         "videoId": 7,
         "videoName": "See you later",
-        "videoLink": "https://youtu.be/qMBfNdaiBn0"
+        "videoLink": "https://youtube.com/embed/qMBfNdaiBn0"
     },
     {
         "videoId": 8,
         "videoName": "Sorry I don't understand",
-        "videoLink": "https://youtu.be/6wP8R9qOX_Q"
+        "videoLink": "https://youtube.com/embed/6wP8R9qOX_Q"
     },
     {
         "videoId": 9,
         "videoName": "Sorry",
-        "videoLink": "https://youtu.be/0W_Jbl7mxuU"
+        "videoLink": "https://youtube.com/embed/0W_Jbl7mxuU"
     },
     {
         "videoId": 10,
         "videoName": "Thank you",
-        "videoLink": "https://youtu.be/O5Tv5KT1VLs"
+        "videoLink": "https://youtube.com/embed/O5Tv5KT1VLs"
     },
     {
         "videoId": 11,
         "videoName": "You are welcome",
-        "videoLink": "https://youtu.be/AT8JoDnRY18"
+        "videoLink": "https://youtube.com/embed/AT8JoDnRY18"
     }
 ]
