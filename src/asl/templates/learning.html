@@ -5,11 +5,7 @@
 <script type="text/javascript" src="{{ url_for('static', filename = 'learning_asl.js') }}"></script>
 
 {% for key, value in lesson.items() %}
-<<<<<<< Updated upstream
-    {% if key > 8 and key <= 11 %}
-=======
     {% if key > 8 and key <= 10 %}
->>>>>>> Stashed changes
         <p id="mannerstitle">{{value.videoName}}</p>
         <iframe width="560" height="315" src={{value.videoLink}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         {% if key == 5 %}
