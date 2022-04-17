@@ -52,4 +52,15 @@ iframe {
 #next, #next2 {
     display: block;
     float: right;
+<<<<<<< Updated upstream
 }
+=======
+}
+
+#videotips{
+    display: block;
+    border-style:none;
+    margin: 0 auto;
+    text-align:center;
+}
+>>>>>>> Stashed changes

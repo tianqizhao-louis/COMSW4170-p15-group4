@@ -3,78 +3,127 @@
         "videoId": 1,
         "videoName": "Nice to meet you",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/2t_M4JRVq3g"
 =======
         "videoLink": "https://youtube.com/embed/2t_M4JRVq3g"
+>>>>>>> Stashed changes
+=======
+        "videoLink": "https://youtube.com/embed/2t_M4JRVq3g",
+        "videoTip": "", 
+        "videoTipLink": ""
 >>>>>>> Stashed changes
     },
     {
         "videoId": 2,
         "videoName": "How are you",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/HqJu6PI5T50"
         
 =======
         "videoLink": "https://youtube.com/embed/HqJu6PI5T50"
+>>>>>>> Stashed changes
+=======
+        "videoLink": "https://youtube.com/embed/HqJu6PI5T50",
+        "videoTip": "",
+        "videoTipLink": ""
 >>>>>>> Stashed changes
     },
     {
         "videoId": 3,
         "videoName": "Good",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/4_gXibyFSGI"
 =======
         "videoLink": "https://www.youtube.com/embed/4_gXibyFSGI"
+>>>>>>> Stashed changes
+=======
+        "videoLink": "https://www.youtube.com/embed/4_gXibyFSGI",
+        "videoTip": "",
+        "videoTipLink": ""
 >>>>>>> Stashed changes
     },
     {
         "videoId": 4,
         "videoName": "Bad",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be.com/embed/37lEc2r2gsw"
 =======
         "videoLink": "https://www.youtube.com/embed/37lEc2r2gsw"
+>>>>>>> Stashed changes
+=======
+        "videoLink": "https://www.youtube.com/embed/37lEc2r2gsw",
+        "videoTip": "", 
+        "videoTipLink": ""
 >>>>>>> Stashed changes
     },
     {
         "videoId": 5,
         "videoName": "Thank you",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/O5Tv5KT1VLs"
 =======
         "videoLink": "https://youtube.com/embed/O5Tv5KT1VLs"
+>>>>>>> Stashed changes
+=======
+        "videoLink": "https://youtube.com/embed/O5Tv5KT1VLs",
+        "videoTip": "", 
+        "videoTipLink": ""
 >>>>>>> Stashed changes
     },
     {
         "videoId": 6,
         "videoName": "You are welcome",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/AT8JoDnRY18"
 =======
         "videoLink": "https://youtube.com/embed/AT8JoDnRY18"
+>>>>>>> Stashed changes
+=======
+        "videoLink": "https://youtube.com/embed/AT8JoDnRY18",
+        "videoTip": "The same as thank you!",
+        "videoTipLink": ""
 >>>>>>> Stashed changes
     },
     {
         "videoId": 7,
         "videoName": "Sorry",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/0W_Jbl7mxuU"
 =======
         "videoLink": "https://youtube.com/embed/0W_Jbl7mxuU"
+>>>>>>> Stashed changes
+=======
+        "videoLink": "https://youtube.com/embed/0W_Jbl7mxuU",
+        "videoTip": "'Sorry' you use your fist!",
+        "videoTipLink": ""
 >>>>>>> Stashed changes
     },
     {
         "videoId": 8,
         "videoName": "Please",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/VBr_hnELRqM"
 =======
         "videoLink": "https://www.youtube.com/embed/VBr_hnELRqM"
+>>>>>>> Stashed changes
+=======
+        "videoLink": "https://www.youtube.com/embed/VBr_hnELRqM",
+        "videoTip": "'Please' you use your palm!",
+        "videoTipLink": ""
 >>>>>>> Stashed changes
     },
     {
         "videoId": 9,
         "videoName": "I am learning ASL",
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         "videoLink": "https://www.youtube.com/embed/RhQvlq-mZtA?start=271"
     },
@@ -90,10 +139,24 @@
         "videoName": "Sorry, I don't understand",
         "videoLink": "https://www.youtube.com/embed/RhQvlq-mZtA"
 >>>>>>> Stashed changes
+=======
+        "videoLink": "https://www.youtube.com/embed/RhQvlq-mZtA?start=271",
+        "videoTip": "", 
+        "videoTipLink": "data:image/png;base64,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"
+    },
+    {
+        "videoId": 10,
+        "videoName": "Sorry, I don't understand",
+        "videoLink": "https://www.youtube.com/embed/RhQvlq-mZtA?start=371",
+        "videoTip": "The first part is the same as 'sorry' you learned before!",
+        "videoTipLink": ""
+>>>>>>> Stashed changes
     },
     {
         "videoId": 11,
         "videoName": "See you later",
-        "videoLink": "https://www.youtube.com/embed/y9Rj_X0IsKY?start=477"
+        "videoLink": "https://www.youtube.com/embed/y9Rj_X0IsKY?start=477",
+        "videoTip": "",
+        "videoTipLink": ""
     }
 ]
