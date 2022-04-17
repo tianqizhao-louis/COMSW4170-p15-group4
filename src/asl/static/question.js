@@ -78,6 +78,16 @@ $(document).ready(function(){
             $("#dialog").dialog({
                 title: "Correct!",
             });
+
+            $.ajax('/increment', {
+               type: 'POST',
+                success: function (data, status, xhr) {
+
+                },
+                error: function (j, t, e) {
+
+                }
+            });
         } else {
             $("#A").css("background-color", "#ea9999")
             $("p", "#dialog").text(cur_data["wrong"]);
@@ -94,6 +104,16 @@ $(document).ready(function(){
             $("p", "#dialog").text(cur_data["correct"]);
             $("#dialog").dialog({
                 title: "Correct!",
+            });
+
+            $.ajax('/increment', {
+               type: 'POST',
+                success: function (data, status, xhr) {
+
+                },
+                error: function (j, t, e) {
+
+                }
             });
         } else {
             $("#B").css("background-color", "#ea9999")
@@ -112,6 +132,16 @@ $(document).ready(function(){
             $("#dialog").dialog({
                 title: "Correct!",
             });
+
+            $.ajax('/increment', {
+               type: 'POST',
+                success: function (data, status, xhr) {
+
+                },
+                error: function (j, t, e) {
+
+                }
+            });
         } else {
             $("#C").css("background-color", "#ea9999")
             $("p", "#dialog").text(cur_data["wrong"]);
@@ -128,6 +158,16 @@ $(document).ready(function(){
             $("p", "#dialog").text(cur_data["correct"]);
             $("#dialog").dialog({
                 title: "Correct!",
+            });
+
+            $.ajax('/increment', {
+               type: 'POST',
+                success: function (data, status, xhr) {
+
+                },
+                error: function (j, t, e) {
+
+                }
             });
         } else {
             $("#D").css("background-color", "#ea9999")
