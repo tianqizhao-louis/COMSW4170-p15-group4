@@ -1,7 +1,9 @@
 from flask import (Blueprint, Flask, flash, g, redirect, render_template, request, url_for, json)
-import os
 
 bp = Blueprint('home', __name__)
+
+
+number_of_correct_answers = 0
 
 
 @bp.route('/', methods=["GET"])
@@ -56,6 +58,8 @@ def farewell(videoId):
 # quiz starting page
 @bp.route('/quiz', methods=["GET"])
 def quiz():
+    global number_of_correct_answers
+    number_of_correct_answers = 0
     return render_template('quiz.html')
 
 
@@ -70,7 +74,16 @@ def question(id=None):
 
 @bp.route('/end')
 def end():
-    return render_template('end.html')
+    global number_of_correct_answers
+    return render_template('end.html', number_of_correct_answers=number_of_correct_answers)
+
+
+@bp.route('/increment', methods=['POST'])
+def increment():
+    global number_of_correct_answers
+    number_of_correct_answers += 1
+
+    return {"status": "success"}
 
 # @bp.route('/greetings/<videoid>', methods=["GET"])
 # def greeting_lesson(videoid):
