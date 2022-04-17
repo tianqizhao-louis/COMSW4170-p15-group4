@@ -2,53 +2,94 @@
     {
         "videoId": 1,
         "videoName": "Nice to meet you",
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/2t_M4JRVq3g"
+=======
+        "videoLink": "https://youtube.com/embed/2t_M4JRVq3g"
+>>>>>>> Stashed changes
     },
     {
         "videoId": 2,
         "videoName": "How are you",
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/HqJu6PI5T50"
         
+=======
+        "videoLink": "https://youtube.com/embed/HqJu6PI5T50"
+>>>>>>> Stashed changes
     },
     {
         "videoId": 3,
         "videoName": "Good",
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/4_gXibyFSGI"
+=======
+        "videoLink": "https://www.youtube.com/embed/4_gXibyFSGI"
+>>>>>>> Stashed changes
     },
     {
         "videoId": 4,
         "videoName": "Bad",
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be.com/embed/37lEc2r2gsw"
+=======
+        "videoLink": "https://www.youtube.com/embed/37lEc2r2gsw"
+>>>>>>> Stashed changes
     },
     {
         "videoId": 5,
         "videoName": "Thank you",
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/O5Tv5KT1VLs"
+=======
+        "videoLink": "https://youtube.com/embed/O5Tv5KT1VLs"
+>>>>>>> Stashed changes
     },
     {
         "videoId": 6,
         "videoName": "You are welcome",
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/AT8JoDnRY18"
+=======
+        "videoLink": "https://youtube.com/embed/AT8JoDnRY18"
+>>>>>>> Stashed changes
     },
     {
         "videoId": 7,
         "videoName": "Sorry",
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/0W_Jbl7mxuU"
+=======
+        "videoLink": "https://youtube.com/embed/0W_Jbl7mxuU"
+>>>>>>> Stashed changes
     },
     {
         "videoId": 8,
         "videoName": "Please",
+<<<<<<< Updated upstream
         "videoLink": "https://youtu.be/embed/VBr_hnELRqM"
+=======
+        "videoLink": "https://www.youtube.com/embed/VBr_hnELRqM"
+>>>>>>> Stashed changes
     },
     {
         "videoId": 9,
         "videoName": "I am learning ASL",
+<<<<<<< Updated upstream
         "videoLink": "https://www.youtube.com/embed/RhQvlq-mZtA?start=271"
     },
     {
         "videoId": 10,
         "videoName": "Sorry I don't understand",
         "videoLink": "https://www.youtube.com/embed/RhQvlq-mZtA?start=371"
+=======
+        "videoLink": "https://www.youtube.com/embed/RhQvlq-mZtA?start=270"
+    },
+    {
+        "videoId": 10,
+        "videoName": "Sorry, I don't understand",
+        "videoLink": "https://www.youtube.com/embed/RhQvlq-mZtA"
+>>>>>>> Stashed changes
     },
     {
         "videoId": 11,

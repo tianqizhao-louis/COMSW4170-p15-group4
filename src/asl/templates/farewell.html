@@ -4,4 +4,18 @@
 <script type="text/javascript" src="{{ url_for('static', filename = 'farewell.js') }}"></script>
 <b class="title">Farewell</b>
 
+{% for key, value in lesson.items() %}
+    {% if key == 11 %}
+        <p id="mannerstitle">{{value.videoName}}</p>
+        <iframe width="560" height="315" src={{value.videoLink}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% if key == 5 %}
+            <br>    
+            <button id="next2">Next</button>
+        {% else %}
+            <br>
+            <button id="prev2">Previous</button>
+            <button id="next2">Next</button>
+        {% endif %}
+    {% endif %}
+{% endfor %}
 {% endblock %}

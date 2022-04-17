@@ -4,7 +4,11 @@ $(document).ready(function() {
         var videoId = parseInt(currentLocation.split('/')[2])
         videoId +=1
         console.log(videoId)
+<<<<<<< Updated upstream
         if(videoId < 12) {
+=======
+        if(videoId < 11) {
+>>>>>>> Stashed changes
             window.location.href = 'http://127.0.0.1:5000/learning/' + videoId
         }
         else {
