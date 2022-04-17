@@ -4,6 +4,9 @@ import os
 bp = Blueprint('home', __name__)
 app = Flask(__name__)
 
+with open('./asl/static/quiz.json') as json_file:
+    quiz_data = json.load(json_file)
+
 @bp.route('/', methods=["GET"])
 def index():
     return render_template('home.html')
@@ -48,9 +51,16 @@ def farewell(videoId):
                 lesson[item['videoId']] = item
     return render_template('farewell.html', lesson=lesson)
 
+# quiz starting page
 @bp.route('/quiz', methods=["GET"])
 def quiz():
     return render_template('quiz.html')
+
+# quiz question page
+@bp.route('/question/<id>')
+def question(id=None):
+    # get to correct quiz question
+    return render_template('question.html', quiz_data=quiz_data, id=id)
 
 """
 @bp.route('/greetings/<videoid>', methods=["GET"])

@@ -1,6 +1,13 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<b class="title">Quiz</b>
 
+<script type="text/javascript" src="{{ url_for('static', filename = 'quiz.js') }}"></script>
+
+<b class="title">Quiz</b>
+<p>Ready for the quiz? You could click on the menu bar to review again or start quiz!</p>
+<p>Press the button to continue.</p>
+<form id = "formID">
+    <input type="submit" id = "start_quiz" value = "Start Quiz!" class = "quiz_button">
+</form>
 {% endblock %}

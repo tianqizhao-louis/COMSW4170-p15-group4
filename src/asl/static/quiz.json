@@ -1,0 +1,84 @@
+[
+  {
+    "questionId": 1,
+    "videoName": "I am learning ASL",
+    "videoLink": "https://youtube.com/embed/yE3rBVPFneY",
+    "A": "Sorry, I don't understand",
+    "B": "Nice to meet you",
+    "C": "I'm learning ASL",
+    "D": "See you later",
+    "answer": "C",
+    "correct": "You are correct! Pointing the finger to yourself means I, grasping from your palm means learn, and the last three gestures mean ASL in letters.",
+    "wrong": "The correct answer is \"I'm learning ASL.\" Pointing the finger to yourself means I, grasping from your palm means learn, and the last three gestures mean ASL in letters."
+  },
+  {
+    "questionId": 2,
+    "videoName": "How are you",
+    "videoLink": "https://youtube.com/embed/3xPZgIf_vkY",
+    "A": "How are you?",
+    "B": "Sorry, I don't understand",
+    "C": "Please",
+    "D": "See you later",
+    "answer": "A",
+    "correct": "You are correct! You do the word \"how\", and point to that person.",
+    "wrong":"The correct answer is \"How are you?\" You do the word \"how\", and point to that person."
+  },
+  {
+    "questionId": 3,
+    "A": "https://youtube.com/embed/BGgFEBNPEbc",
+    "B": "https://youtube.com/embed/giw0ohh5Gv4",
+    "C": "https://youtube.com/embed/09LWuyeximA",
+    "D": "https://youtube.com/embed/tWbE4f44gek",
+    "question": "Which of the following way is correct to say \"please\"?",
+    "answer": "B",
+    "correct": "You are correct! A means Thank you, C means good, and D means bad. ",
+    "wrong":"The correct answer is B. A means Thank you, C means good, and D means bad. "
+  },
+  {
+    "questionId": 4,
+    "A": "https://youtube.com/embed/09LWuyeximA",
+    "B": "https://youtube.com/embed/tWbE4f44gek",
+    "C": "https://youtube.com/embed/BGgFEBNPEbc",
+    "D": "https://youtube.com/embed/gvJvKH1m8FE",
+    "question": "Which one of the following is the correct way to respond to \"thank you\"?",
+    "answer": "C",
+    "correct": "You are correct! C could be \"Thank you\" as well as \"You are welcome\". A means good, B means bad, and D means sorry.",
+    "wrong":"The correct answer is C. C could be \"Thank you\" as well as \"You are welcome\". A means good, B means bad, and D means sorry."
+  },
+  {
+    "questionId": 5,
+    "videoName": "Nice to meet you",
+    "videoLink": "https://youtube.com/embed/GtNxaemPtR0",
+    "A": "See you later",
+    "B": "Nice to meet you",
+    "C": "Sorry, I don't understand",
+    "D": "How are you",
+    "answer": "B",
+    "correct": "You are correct! Notice the \"meet\" sign in the middle.",
+    "wrong":"The correct answer is B. Notice the \"meet\" sign in the middle."
+  },
+  {
+    "questionId": 6,
+    "videoName": "See you later",
+    "videoLink": "https://youtube.com/embed/XJtuttpTFwg",
+    "A": "See you later",
+    "B": "Nice to meet you",
+    "C": "Sorry, I don't understand",
+    "D": "How are you",
+    "answer": "A",
+    "correct": "You are correct! You do \"V\" hand pointing to your face and then point to the floor.",
+    "wrong":"The correct answer is A. You do \"V\" hand pointing to your face and then point to the floor."
+  },
+  {
+    "questionId": 7,
+    "videoName": "Sorry, I don't understand",
+    "videoLink": "https://youtube.com/embed/Yjp8NKlZAlM",
+    "A": "I'm learning ASL",
+    "B": "How are you",
+    "C": "Nice to meet you",
+    "D": "Sorry, I don't understand",
+    "answer": "D",
+    "correct": "You are correct! You do the sign for \"sorry\" first, and then get your index finger going to the back.",
+    "wrong":"The correct answer is D. You do the sign for \"sorry\" first, and then get your index finger going to the back."
+  }
+]
