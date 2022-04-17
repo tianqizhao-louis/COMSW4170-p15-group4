@@ -1,6 +1,22 @@
 {% extends "layout.html" %}
 
 {% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'greetings.js') }}"></script>
 
 
+<b class="title">Greetings</b>
+{% for key, value in lesson.items() %}
+    {% if key <= 4 %}
+        <p id="greetingtitle">{{value.videoName}}</p>
+        <iframe width="560" height="315" src={{value.videoLink}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% if key == 1 %}
+            <br>    
+            <button id="next">Next</button>
+        {% else %}
+            <br>
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        {% endif %}
+    {% endif %}
+{% endfor %}
 {% endblock %}
