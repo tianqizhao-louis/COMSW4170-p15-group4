@@ -2,5 +2,24 @@
 
 {% block content %}
 <b class="title">Learning-ASL</b>
+<script type="text/javascript" src="{{ url_for('static', filename = 'learning_asl.js') }}"></script>
 
+{% for key, value in lesson.items() %}
+<<<<<<< Updated upstream
+    {% if key > 8 and key <= 11 %}
+=======
+    {% if key > 8 and key <= 10 %}
+>>>>>>> Stashed changes
+        <p id="mannerstitle">{{value.videoName}}</p>
+        <iframe width="560" height="315" src={{value.videoLink}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% if key == 5 %}
+            <br>    
+            <button id="next2">Next</button>
+        {% else %}
+            <br>
+            <button id="prev2">Previous</button>
+            <button id="next2">Next</button>
+        {% endif %}
+    {% endif %}
+{% endfor %}
 {% endblock %}

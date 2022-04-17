@@ -1,57 +1,57 @@
 [
     {
         "videoId": 1,
-        "videoName": "Bad",
-        "videoLink": "https://youtube.com/embed/37lEc2r2gsw"
-    },
-    {
-        "videoId": 2,
-        "videoName": "Good",
-        "videoLink": "https://youtube.com/embed/4_gXibyFSGI"
-    },
-    {
-        "videoId": 3,
-        "videoName": "How are you",
-        "videoLink": "https://youtube.com/embed/HqJu6PI5T50"
-    },
-    {
-        "videoId": 4,
-        "videoName": "I am learning ASL",
-        "videoLink": "https://youtube.com/embed/6dsWDK6UnmM"
-    },
-    {
-        "videoId": 5,
         "videoName": "Nice to meet you",
         "videoLink": "https://youtube.com/embed/2t_M4JRVq3g"
     },
     {
-        "videoId": 6,
-        "videoName": "Please",
-        "videoLink": "https://youtube.com/embed/VBr_hnELRqM"
+        "videoId": 2,
+        "videoName": "How are you",
+        "videoLink": "https://youtube.com/embed/HqJu6PI5T50"
     },
     {
-        "videoId": 7,
-        "videoName": "See you later",
-        "videoLink": "https://youtube.com/embed/qMBfNdaiBn0"
+        "videoId": 3,
+        "videoName": "Good",
+        "videoLink": "https://www.youtube.com/embed/4_gXibyFSGI"
     },
     {
-        "videoId": 8,
-        "videoName": "Sorry I don't understand",
-        "videoLink": "https://youtube.com/embed/6wP8R9qOX_Q"
+        "videoId": 4,
+        "videoName": "Bad",
+        "videoLink": "https://www.youtube.com/embed/37lEc2r2gsw"
     },
     {
-        "videoId": 9,
-        "videoName": "Sorry",
-        "videoLink": "https://youtube.com/embed/0W_Jbl7mxuU"
-    },
-    {
-        "videoId": 10,
+        "videoId": 5,
         "videoName": "Thank you",
         "videoLink": "https://youtube.com/embed/O5Tv5KT1VLs"
     },
     {
-        "videoId": 11,
+        "videoId": 6,
         "videoName": "You are welcome",
         "videoLink": "https://youtube.com/embed/AT8JoDnRY18"
+    },
+    {
+        "videoId": 7,
+        "videoName": "Sorry",
+        "videoLink": "https://youtube.com/embed/0W_Jbl7mxuU"
+    },
+    {
+        "videoId": 8,
+        "videoName": "Please",
+        "videoLink": "https://www.youtube.com/embed/VBr_hnELRqM"
+    },
+    {
+        "videoId": 9,
+        "videoName": "I am learning ASL",
+        "videoLink": "https://www.youtube.com/embed/RhQvlq-mZtA?start=271"
+    },
+    {
+        "videoId": 10,
+        "videoName": "Sorry, I don't understand",
+        "videoLink": "https://www.youtube.com/embed/RhQvlq-mZtA?start=371"
+    },
+    {
+        "videoId": 11,
+        "videoName": "See you later",
+        "videoLink": "https://www.youtube.com/embed/y9Rj_X0IsKY?start=477"
     }
 ]
