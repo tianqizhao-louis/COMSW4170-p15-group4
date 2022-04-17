@@ -5,8 +5,8 @@
 <script type="text/javascript" src="{{ url_for('static', filename = 'question.js') }}"></script>
 
 <script>
-    let id = {{id|tojson}}
-    let quiz_data = {{quiz_data|tojson}}
+    let id = {{id|tojson|safe}}
+    let quiz_data = {{quiz_data|tojson|safe}}
 </script>
 
 <div class = "quiz_title">
