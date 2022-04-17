@@ -43,16 +43,16 @@
     {
         "videoId": 9,
         "videoName": "I am learning ASL",
-        "videoLink": "https://youtu.be/embed/6dsWDK6UnmM"
+        "videoLink": "https://www.youtube.com/embed/RhQvlq-mZtA?start=271"
     },
     {
         "videoId": 10,
         "videoName": "Sorry I don't understand",
-        "videoLink": "https://youtu.be/embed/6wP8R9qOX_Q"
+        "videoLink": "https://www.youtube.com/embed/RhQvlq-mZtA?start=371"
     },
     {
         "videoId": 11,
         "videoName": "See you later",
-        "videoLink": "https://youtu.be/embed/qMBfNdaiBn0"
+        "videoLink": "https://www.youtube.com/embed/y9Rj_X0IsKY?start=477"
     }
 ]
