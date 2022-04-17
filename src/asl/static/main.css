@@ -29,7 +29,7 @@ p {
     text-align:center;
 }
 
-#start {
+button {
     background-color: #13c2b3;
     font-size: 20px;
     color: white;
@@ -80,4 +80,24 @@ p {
 .quiz_next {
     display: inline-block;
     padding: 8px 16px;
+}
+
+
+.title {
+    font-size: 40px;
+}
+
+#greetingtitle, #mannerstitle {
+    text-align:center;
+}
+
+iframe {
+    display: block;
+    border-style:none;
+    margin: 0 auto;
+}
+
+#next, #next2 {
+    display: block;
+    float: right;
 }
