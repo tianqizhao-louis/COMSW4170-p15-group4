@@ -34,3 +34,49 @@ p {
     font-size: 20px;
     color: white;
 }
+
+
+/* quiz part css */
+
+.quiz_button {
+    background-color: #13c2b3;
+    font-size: 20px;
+    color: white;
+}
+
+.quiz_title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Old Standard TT', serif;
+    margin: 10px 0 15px 0;
+}
+
+.quiz_choice {
+    font-size: 20px;
+    font-family: 'Old Standard TT', serif;
+    border-radius: 10px;
+    border: none;
+    padding: 7px 10px;
+    margin: 5px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.video_size {
+    width: 500px;
+    height: 350px
+}
+
+
+.hidden{
+    visibility: hidden;
+}
+
+.quiz_next {
+    display: inline-block;
+    padding: 8px 16px;
+}

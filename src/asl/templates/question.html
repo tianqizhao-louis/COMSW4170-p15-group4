@@ -1,10 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'question.js') }}"></script>
+
+<script>
+    let id = {{id|tojson}}
+    let quiz_data = {{quiz_data|tojson}}
+</script>
+
+<div class = "quiz_title">
+    QUIZ
+</div>
+
+
+<div class = "center" id = "quiz_div">
+</div>
+
+<div id="dialog" title="">
+    <p></p>
+</div>
+
+<br>
+
+<div class = "row">
+    <form id = "Prev" class = "col-md-2">
+        <input type="submit" id = "prev_quiz" value = "&laquo; Prev" class = "quiz_next">
+    </form>
+
+    <div class = "col-md-8"></div>
+
+    <form id = "Next" class = "col-md-2">
+        <input type="submit" id = "next_quiz" value = "Next &raquo;" class = "quiz_next">
+    </form>
+</div>
+
+
+
+{% endblock %}

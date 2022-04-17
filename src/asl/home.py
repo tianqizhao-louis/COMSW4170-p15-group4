@@ -1,7 +1,10 @@
 from flask import (Blueprint, flash, g, redirect, render_template, request, url_for)
+import json
 
 bp = Blueprint('home', __name__)
 
+with open('./asl/static/quiz.json') as json_file:
+    quiz_data = json.load(json_file)
 
 @bp.route('/', methods=["GET"])
 def index():
@@ -23,7 +26,14 @@ def learning():
 def farewell():
     return render_template('farewell.html')
 
+# quiz starting page
 @bp.route('/quiz', methods=["GET"])
 def quiz():
     return render_template('quiz.html')
+
+# quiz question page
+@bp.route('/question/<id>')
+def question(id=None):
+    # get to correct quiz question
+    return render_template('question.html', quiz_data=quiz_data, id=id)
 

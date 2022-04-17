@@ -1,10 +1,37 @@
-{
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
-        "sourceMap": true
-    },
-    "exclude": [
-        "node_modules"
-    ]
-}
+[
+  {
+    "questionId": 1,
+    "videoName": "I am learning ASL",
+    "videoLink": "https://youtube.com/embed/6dsWDK6UnmM",
+    "A": "Sorry, I don't understand",
+    "B": "Nice to meet you",
+    "C": "I'm learning ASL",
+    "D": "See you later",
+    "answer": "C",
+    "correct": "You are correct! Pointing the finger to yourself means I, grasping from your palm means learn, and the last three gestures mean ASL in letters.",
+    "wrong": "The correct answer is \"I'm learning ASL.\" Pointing the finger to yourself means I, grasping from your palm means learn, and the last three gestures mean ASL in letters."
+  },
+  {
+    "questionId": 2,
+    "videoName": "How are you",
+    "videoLink": "https://youtube.com/embed/HqJu6PI5T50",
+    "A": "How are you?",
+    "B": "Sorry, I don't understand",
+    "C": "Please",
+    "D": "See you later",
+    "answer": "A",
+    "correct": "You are correct! You do the word \"how\", and point to that person.",
+    "wrong":"The correct answer is \"How are you?\" You do the word \"how\", and point to that person."
+  },
+  {
+    "questionId": 3,
+    "A": "https://youtube.com/embed/O5Tv5KT1VLs",
+    "B": "https://youtube.com/embed/VBr_hnELRqM",
+    "C": "https://youtube.com/embed/4_gXibyFSGI",
+    "D": "https://youtube.com/embed/37lEc2r2gsw",
+    "question": "Which of the folling way is correct to say \"please\"?",
+    "answer": "B",
+    "correct": "You are correct! A means Thank you, C means good, and D means bad. ",
+    "wrong":"The correct answer is B. A means Thank you, C means good, and D means bad. "
+  }
+]
