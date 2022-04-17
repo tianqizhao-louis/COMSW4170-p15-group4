@@ -3,7 +3,12 @@ $(document).ready(function(){
     $("#Next").submit(function(){
         // go to next
         id = parseInt(id) + 1;
-        $('#Next').attr('action', '/question/'+id);
+        if (id < 8) {
+            $('#Next').attr('action', '/question/'+id);
+        } else {
+            $('#Next').attr('action', '/end');
+        }
+
     })
 
     // go to the prev question
@@ -52,10 +57,12 @@ $(document).ready(function(){
                     .append(
                         $('<div>' +
                             '<iframe class = \'video_size\' src='+ cur_data["videoLink"] +'> </iframe></div>' +
+                            '<div id = "choices">' +
                             '<div><button id=\'A\' class=\'quiz_choice\'> A: ' + cur_data["A"] + '</button></div>' +
                             '<div><button id=\'B\' class=\'quiz_choice\'> B: ' + cur_data["B"] + '</button></div>' +
                             '<div><button id=\'C\' class=\'quiz_choice\'> C: ' + cur_data["C"] + '</button></div>' +
-                            '<div><button id=\'D\' class=\'quiz_choice\'> D: '+ cur_data["D"] + '</button></div>')
+                            '<div><button id=\'D\' class=\'quiz_choice\'> D: '+ cur_data["D"] + '</button></div>' +
+                            '</div>')
                     )
             }
         });
@@ -78,6 +85,7 @@ $(document).ready(function(){
                 title: "Almost there!",
             });
         }
+        $(".quiz_choice:input").prop('disabled', true);
     });
 
     $("#B").click(function(){
@@ -94,6 +102,7 @@ $(document).ready(function(){
                 title: "Almost there!",
             });
         }
+        $(".quiz_choice:input").prop('disabled', true);
     });
 
     $("#C").click(function(){
@@ -110,6 +119,7 @@ $(document).ready(function(){
                 title: "Almost there!",
             });
         }
+        $(".quiz_choice:input").prop('disabled', true);
     });
 
     $("#D").click(function(){
@@ -126,6 +136,7 @@ $(document).ready(function(){
                 title: "Almost there!",
             });
         }
+        $(".quiz_choice:input").prop('disabled', true);
     });
 
 })

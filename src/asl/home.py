@@ -62,6 +62,10 @@ def question(id=None):
     # get to correct quiz question
     return render_template('question.html', quiz_data=quiz_data, id=id)
 
+@bp.route('/end')
+def end():
+    return render_template('end.html')
+
 """
 @bp.route('/greetings/<videoid>', methods=["GET"])
 def greeting_lesson(videoid):
