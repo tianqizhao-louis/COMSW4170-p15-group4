@@ -100,4 +100,13 @@ iframe {
 #next, #next2 {
     display: block;
     float: right;
+
 }
+
+#videotips{
+    display: block;
+    border-style:none;
+    margin: 0 auto;
+    text-align:center;
+}
+

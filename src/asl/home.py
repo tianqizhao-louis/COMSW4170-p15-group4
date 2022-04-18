@@ -58,6 +58,8 @@ def farewell(videoId):
 # quiz starting page
 @bp.route('/quiz', methods=["GET"])
 def quiz():
+    global number_of_correct_answers
+    number_of_correct_answers = 0
     return render_template('quiz.html')
 
 

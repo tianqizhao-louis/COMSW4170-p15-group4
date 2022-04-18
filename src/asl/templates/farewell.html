@@ -1,6 +1,22 @@
 {% extends "layout.html" %}
 
 {% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'farewell.js') }}"></script>
 <b class="title">Farewell</b>
 
+{% for key, value in lesson.items() %}
+    {% if key == 11 %}
+        <p id="mannerstitle">{{value.videoName}}</p>
+        <iframe width="560" height="315" src={{value.videoLink}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>    
+        <button id="next2">Ready for the Quiz?</button>
+        {%if value.videoTip != ""%}
+            <p id="videotips"> Tip: {{value.videoTip}}</p>
+        {%endif%}
+        {%if value.videoTipLink != ""%}
+            <p id="videotips"> Tip: </p>
+            <iframe width="350" height=auto src={{value.videoTipLink}} frameborder="0"></iframe>
+        {%endif%}
+    {% endif %}
+{% endfor %}
 {% endblock %}
