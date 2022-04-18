@@ -108,5 +108,10 @@ def store_quiz_data():
 @bp.route('/save-important', methods=['POST'])
 def save_important():
     content = request.json
-    question_number = str(content['visitingTime'])
-    return question_number
+    question_number = str(content['visitTime'])
+
+    dict_data = {"visit_time": question_number}
+
+    with open('./asl/static/important_information.json', 'w', encoding='utf-8') as json_write:
+        json.dump(dict_data, json_write, sort_keys=True, indent=4)
+    return {"status": "success"}
