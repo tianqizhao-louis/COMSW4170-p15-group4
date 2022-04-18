@@ -83,6 +83,28 @@ def increment():
 
     return {"status": "success"}
 
-# @bp.route('/greetings/<videoid>', methods=["GET"])
-# def greeting_lesson(videoid):
-#     return render_template('greetings.html', id=id)
+
+@bp.route('/store', methods=['POST'])
+def store_quiz_data():
+    content = request.json
+    question_number = str(content['questionNumber'])
+    choice = str(content['choice'])
+
+    with open('./asl/static/user_data.json', 'r', encoding='utf-8') as json_file:
+        user_data = json.load(json_file)
+
+    user_data['choices'][question_number] = choice
+
+    with open('./asl/static/user_data.json', 'w', encoding='utf-8') as json_write:
+        json.dump(user_data, json_write, sort_keys=True, indent=4)
+
+    return {
+        "status": "success"
+    }
+
+
+@bp.route('/save-important', methods=['POST'])
+def save_important():
+    content = request.json
+    question_number = str(content['visitingTime'])
+    return question_number
