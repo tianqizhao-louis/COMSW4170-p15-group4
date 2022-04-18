@@ -17,6 +17,13 @@
             <button id="prev2">Previous</button>
             <button id="next2">Next</button>
         {% endif %}
+        {%if value.videoTip != ""%}
+            <p id="videotips"> Tip: {{value.videoTip}}</p>
+        {%endif%}
+        {%if value.videoTipLink != ""%}
+            <p id="videotips"> Tip: </p>
+            <iframe width="350" height=auto src={{value.videoTipLink}} frameborder="0"></iframe>
+        {%endif%}
     {% endif %}
 {% endfor %}
 {% endblock %}
