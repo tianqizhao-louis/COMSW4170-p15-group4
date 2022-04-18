@@ -72,6 +72,26 @@ $(document).ready(function(){
 
     // button A B C D
     $("#A").click(function(){
+        let store_quiz_data = {
+          "questionNumber": id,
+          "choice": "A"
+        };
+
+        $.ajax({
+            url: "/store",
+            type: "POST",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(store_quiz_data),
+            success: function (data, status, xhr) {
+
+            },
+            error: function (jqxhr, status, error) {
+                console.log(error)
+            }
+        });
+
+
         if (cur_data["answer"] === 'A') {
             $("#A").css("background-color", "#b6d7a8")
             $("p", "#dialog").text(cur_data["correct"]);
@@ -99,6 +119,26 @@ $(document).ready(function(){
     });
 
     $("#B").click(function(){
+
+        let store_quiz_data = {
+          "questionNumber": id,
+          "choice": "B"
+        };
+
+        $.ajax({
+            url: "/store",
+            type: "POST",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(store_quiz_data),
+            success: function (data, status, xhr) {
+
+            },
+            error: function (jqxhr, status, error) {
+                console.log(error)
+            }
+        });
+
         if (cur_data["answer"] === 'B') {
             $("#B").css("background-color", "#b6d7a8")
             $("p", "#dialog").text(cur_data["correct"]);
@@ -126,6 +166,26 @@ $(document).ready(function(){
     });
 
     $("#C").click(function(){
+        let store_quiz_data = {
+          "questionNumber": id,
+          "choice": "C"
+        };
+
+        $.ajax({
+            url: "/store",
+            type: "POST",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(store_quiz_data),
+            success: function (data, status, xhr) {
+
+            },
+            error: function (jqxhr, status, error) {
+                console.log(error)
+            }
+        });
+
+
         if (cur_data["answer"] === 'C') {
             $("#C").css("background-color", "#b6d7a8")
             $("p", "#dialog").text(cur_data["correct"]);
@@ -153,6 +213,27 @@ $(document).ready(function(){
     });
 
     $("#D").click(function(){
+
+        let store_quiz_data = {
+          "questionNumber": id,
+          "choice": "D"
+        };
+
+        $.ajax({
+            url: "/store",
+            type: "POST",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(store_quiz_data),
+            success: function (data, status, xhr) {
+
+            },
+            error: function (jqxhr, status, error) {
+                console.log(error)
+            }
+        });
+
+
         if (cur_data["answer"] === 'D') {
             $("#D").css("background-color", "#b6d7a8")
             $("p", "#dialog").text(cur_data["correct"]);
