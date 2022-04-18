@@ -103,3 +103,10 @@ def store_quiz_data():
     return {
         "status": "success"
     }
+
+
+@bp.route('/save-important', methods=['POST'])
+def save_important():
+    content = request.json
+    question_number = str(content['visitingTime'])
+    return question_number

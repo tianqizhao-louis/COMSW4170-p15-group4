@@ -130,4 +130,5 @@ dmypy.json
 
 .idea/
 .DS_Store
+important_information.json
 user_data.json
