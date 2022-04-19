@@ -63,15 +63,22 @@ button {
 
 .center {
     margin: auto;
-    width: 50%;
+    width: 80%;
     padding: 10px;
+    text-align: center;
+}
+
+.quiz_center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: left;
 }
 
 .video_size {
     width: 500px;
-    height: 350px
+    height: 300px
 }
-
 
 .hidden{
     visibility: hidden;
@@ -81,7 +88,6 @@ button {
     display: inline-block;
     padding: 8px 16px;
 }
-
 
 .title {
     font-size: 40px;
