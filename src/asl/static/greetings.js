@@ -15,4 +15,17 @@ $(document).ready(function() {
         window.location.href = '/greetings/' + videoId
     })
 
+    $("#video1").on("click", function() {
+        window.location.href = '/greetings/' + 1
+    })
+    $("#video2").on("click", function() {
+        window.location.href = '/greetings/' + 2
+    })
+    $("#video3").on("click", function() {
+        window.location.href = '/greetings/' + 3
+    })
+    $("#video4").on("click", function() {
+        window.location.href = '/greetings/' + 4
+    })
+
 })

@@ -15,4 +15,8 @@ $(document).ready(function() {
         videoId -=1
         window.location.href = 'http://127.0.0.1:5000/learning/' + videoId
     })
+
+    $("#video1").on("click", function() {
+        window.location.href = '/farewell/' + 11
+    })
 })

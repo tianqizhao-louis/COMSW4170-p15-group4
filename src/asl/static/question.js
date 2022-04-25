@@ -33,6 +33,7 @@ $(document).ready(function(){
             if (parseInt(id) === parseInt(quiz_data[index]["questionId"])) {
                 cur_data = quiz_data[index]
                 new_data = $('<p>Q<span>'+id+'</span>: '+ cur_data["question"] +'</p>' +
+                            '<p>Please click on the letter button on the left side of each video when making choices.</p>' +
                             '<div class = \'row\'>' +
                             '<div class = \'col-md-1\'><button id=\'A\' class=\'quiz_choice\'> A: </button></div>' +
                             '<iframe class = \'col-md-5 video_size\' src='+ cur_data["A"] +'> </iframe>' +

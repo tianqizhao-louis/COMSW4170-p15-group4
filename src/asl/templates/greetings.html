@@ -7,6 +7,12 @@
 <b class="title">Greetings</b>
 {% for key, value in lesson.items() %}
     {% if key <= 4 %}
+        <div class = "progress_guide">
+            <button id="video1" class = "quiz_button">Nice to meet you</button>
+            <button id="video2" class = "quiz_button">How are you</button>
+            <button id="video3" class = "quiz_button">Good</button>
+            <button id="video4" class = "quiz_button">Bad</button>
+        </div>
         <p id="greetingtitle">{{value.videoName}}</p>
         <iframe width="560" height="315" src={{value.videoLink}} frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         {% if key == 1 %}
