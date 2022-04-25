@@ -115,3 +115,8 @@ def save_important():
     with open('./asl/static/important_information.json', 'w', encoding='utf-8') as json_write:
         json.dump(dict_data, json_write, sort_keys=True, indent=4)
     return {"status": "success"}
+
+
+# just a temporary route, should be fixed by the next iteration
+# @bp.route('/quiz-drag-and-drop', methods=['GET'])
+# def drag_and_drop():
