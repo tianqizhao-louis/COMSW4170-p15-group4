@@ -17,4 +17,17 @@ $(document).ready(function() {
         videoId -=1
         window.location.href = '/manners/' + videoId
     })
+
+    $("#video1").on("click", function() {
+        window.location.href = '/manners/' + 5
+    })
+    $("#video2").on("click", function() {
+        window.location.href = '/manners/' + 6
+    })
+    $("#video3").on("click", function() {
+        window.location.href = '/manners/' + 7
+    })
+    $("#video4").on("click", function() {
+        window.location.href = '/manners/' + 8
+    })
 })

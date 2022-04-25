@@ -34,6 +34,11 @@ button {
     color: white;
 }
 
+.progress_guide {
+    margin: 20px;
+    text-align: center;
+}
+
 
 /* quiz part css */
 

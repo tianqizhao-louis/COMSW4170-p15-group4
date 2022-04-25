@@ -6,6 +6,9 @@
 
 {% for key, value in lesson.items() %}
     {% if key == 11 %}
+        <div class = "progress_guide">
+            <button id="video1" class = "quiz_button">See you later</button>
+        </div>
         <p id="mannerstitle">{{value.videoName}}</p>
         <iframe width="560" height="315" src={{value.videoLink}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <br>    
