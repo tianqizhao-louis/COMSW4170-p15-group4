@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    $("#prev_quiz").hide();
+
+    $("#next_quiz").prop("disabled", true)
+
     // go to the next question
     $("#Next").submit(function(){
         // go to next
@@ -116,6 +120,7 @@ $(document).ready(function(){
             });
         }
         $(".quiz_choice:input").prop('disabled', true);
+        $("#next_quiz").prop("disabled", false);
     });
 
     $("#B").click(function(){
@@ -163,6 +168,7 @@ $(document).ready(function(){
             });
         }
         $(".quiz_choice:input").prop('disabled', true);
+        $("#next_quiz").prop("disabled", false);
     });
 
     $("#C").click(function(){
@@ -210,6 +216,7 @@ $(document).ready(function(){
             });
         }
         $(".quiz_choice:input").prop('disabled', true);
+        $("#next_quiz").prop("disabled", false);
     });
 
     $("#D").click(function(){
@@ -258,6 +265,7 @@ $(document).ready(function(){
             });
         }
         $(".quiz_choice:input").prop('disabled', true);
+        $("#next_quiz").prop("disabled", false);
     });
 
 })
