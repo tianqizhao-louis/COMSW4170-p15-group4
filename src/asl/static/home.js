@@ -10,17 +10,24 @@ $(document).ready(function() {
 
     let dictDateTime = {'visitTime': dateTime};
 
+    sendAjax('/save-important', 'POST', dictDateTime);
+})
+
+function sendAjax(url, type, data) {
     $.ajax({
-        url: "/save-important",
-        type: "POST",
+        async: true,
+        crossOrigin: true,
+        url: url,
+        type: type,
         dataType: "json",
         contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(dictDateTime),
+        data: JSON.stringify(data),
         success: function (data, status, xhr) {
 
         },
         error: function (jqxhr, status, error) {
+            console.log(status)
             console.log(error)
         }
-    });
-})
+    })
+}
