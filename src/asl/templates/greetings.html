@@ -4,11 +4,22 @@
 <script type="text/javascript" src="{{ url_for('static', filename = 'greetings.js') }}"></script>
 
 
+<div class="progress">
+	<div class="step">
+		<h4><span id="stepNum" class="stepNum">1</span> of 4</h4>
+	</div>
+	<div class="progBar">
+		<div class="barWrap">
+			<div id="bar" class="bar"></div>
+		</div>
+	</div>
+</div>
+
 <b class="title">Greetings</b>
 {% for key, value in lesson.items() %}
     {% if key <= 4 %}
         <p id="greetingtitle">{{value.videoName}}</p>
-        <iframe width="560" height="315" src={{value.videoLink}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src={{value.videoLink}} frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         {% if key == 1 %}
             <br>    
             <button id="next">Next</button>
