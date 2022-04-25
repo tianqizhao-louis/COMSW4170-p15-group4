@@ -16,13 +16,13 @@ $(document).ready(function(){
     })
 
     // go to the prev question
-    $("#Prev").submit(function(){
-        // don't go if it's the first one
-        if (id !== "1") {
-            id = parseInt(id) - 1;
-            $('#Prev').attr('action', '/question/'+id);
-        }
-    })
+    // $("#Prev").submit(function(){
+    //     // don't go if it's the first one
+    //     if (id !== "1") {
+    //         id = parseInt(id) - 1;
+    //         $('#Prev').attr('action', '/question/'+id);
+    //     }
+    // })
 
     let cur_data = 0
     let new_data = 0
@@ -32,23 +32,20 @@ $(document).ready(function(){
         $.each(quiz_data, function( index ) {
             if (parseInt(id) === parseInt(quiz_data[index]["questionId"])) {
                 cur_data = quiz_data[index]
-                new_data = $('<p>Q<span>'+id+'</span>: '+ cur_data["question"] +'</p>')
-                    .append(
-                        $('<div class = \'row\'>' +
+                new_data = $('<p>Q<span>'+id+'</span>: '+ cur_data["question"] +'</p>' +
                             '<div class = \'row\'>' +
-                            '<div class = \'col-md-2\'><button id=\'A\' class=\'quiz_choice\'> A: </button></div>' +
-                            '<iframe class = \'col-md-10 video_size\' src='+ cur_data["A"] +'> </iframe></div>' +
-                            '<div class = \'row\'>' +
-                            '<div class = \'col-md-2\'><button id=\'B\' class=\'quiz_choice\'> B: </button></div>' +
-                            '<iframe class = \'col-md-10 video_size\' src='+ cur_data["B"] +'> </iframe></div>' +
-                            '</div>' +
+                            '<div class = \'col-md-1\'><button id=\'A\' class=\'quiz_choice\'> A: </button></div>' +
+                            '<iframe class = \'col-md-5 video_size\' src='+ cur_data["A"] +'> </iframe>' +
+                            '<div class = \'col-md-1\'><button id=\'B\' class=\'quiz_choice\'> B: </button></div>' +
+                            '<iframe class = \'col-md-5 video_size\' src='+ cur_data["B"] +'> </iframe>' +
+                            '</div>' + '<br>' +
 
                             '<div class = \'row\'>' +
-                            '<div class = \'col-md-2\'><button id=\'C\' class=\'quiz_choice\'> C: </button></div>' +
-                            '<iframe class = \'col-md-10 video_size\' src='+ cur_data["C"] +'> </iframe></div>' +
-                            '<div class = \'row\'>' +
-                            '<div class = \'col-md-2\'><button id=\'D\' class=\'quiz_choice\'> D: </button></div>' +
-                            '<iframe class = \'col-md-10 video_size\' src='+ cur_data["D"] +'> </iframe></div>')
+                            '<div class = \'col-md-1\'><button id=\'C\' class=\'quiz_choice\'> C: </button></div>' +
+                            '<iframe class = \'col-md-5 video_size\' src='+ cur_data["C"] +'> </iframe>' +
+                            '<div class = \'col-md-1\'><button id=\'D\' class=\'quiz_choice\'> D: </button></div>' +
+                            '<iframe class = \'col-md-5 video_size\' src='+ cur_data["D"] +'> </iframe>' +
+                            '</div>'
                     )
             }
         });
@@ -59,9 +56,9 @@ $(document).ready(function(){
                 cur_data = quiz_data[index]
                 new_data = $('<p>Q<span>'+id+'</span>: What does this gesture mean in English?</p>')
                     .append(
-                        $('<div>' +
+                        $('<div class = "quiz_center">' +
                             '<iframe class = \'video_size\' src='+ cur_data["videoLink"] +'> </iframe></div>' +
-                            '<div id = "choices">' +
+                            '<div id = "choices" class = "quiz_center">' +
                             '<div><button id=\'A\' class=\'quiz_choice\'> A: ' + cur_data["A"] + '</button></div>' +
                             '<div><button id=\'B\' class=\'quiz_choice\'> B: ' + cur_data["B"] + '</button></div>' +
                             '<div><button id=\'C\' class=\'quiz_choice\'> C: ' + cur_data["C"] + '</button></div>' +
