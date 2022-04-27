@@ -8,6 +8,10 @@ body {
     color: var(--dark-pc-color);
 }
 
+.text-title-font {
+    font-family: 'Old Standard TT', serif
+}
+
 #navbar {
     background-color: var(--light-pc-color);
     margin-bottom: 10px;
@@ -20,6 +24,13 @@ body {
 }
 
 strong {
+    display:inline-block;
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+    font-size: 50px;
+}
+
+.strong {
     display:inline-block;
     text-align: center;
     font-family: 'Old Standard TT', serif;
@@ -58,6 +69,10 @@ p {
     font-size: 20px;
     color: white;
     font-family: 'Old Standard TT', serif;
+}
+
+.button-text-size {
+    font-size: 20px;
 }
 
 .quiz_title {
@@ -110,6 +125,7 @@ p {
 
 #greetingtitle, #mannerstitle {
     text-align:center;
+    color: var(--dark-pc-color);
 }
 
 iframe {
