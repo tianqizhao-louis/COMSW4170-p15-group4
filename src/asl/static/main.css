@@ -1,14 +1,25 @@
+@import url(color.css);
+
+body {
+    background-color: var(--base-pc-color);
+}
+
+.text-style-dark-grey {
+    color: var(--dark-pc-color);
+}
+
 #navbar {
-    background-color: #13c2b3;
+    background-color: var(--light-pc-color);
     margin-bottom: 10px;
 }
 
 .nav-link {
-    color: white;
+    color: var(--dark-pc-color);
     font-size: 20px;
     font-family: 'Old Standard TT', serif;
 }
-b {
+
+strong {
     display:inline-block;
     text-align: center;
     font-family: 'Old Standard TT', serif;
@@ -28,11 +39,11 @@ p {
     text-align:center;
 }
 
-button {
+/* button {
     background-color: #13c2b3;
     font-size: 20px;
     color: white;
-}
+} */
 
 .progress_guide {
     margin: 20px;
