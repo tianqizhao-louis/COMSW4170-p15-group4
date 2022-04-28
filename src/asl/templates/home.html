@@ -1,12 +1,31 @@
 {% extends "layout.html" %}
 
 {% block content %}
+
 <script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>
 
-<div id="welcome"><b>Welcome to the world of ASL!</b></div>
+<div id="welcome">
+    <strong class="text-style-dark-grey">
+        Welcome to the world of ASL!
+    </strong>
+</div>
+
 <br>
-<p id="introduction">American Sign Language (ASL) is a bridge between hearing people and the deaf group. By ASL, we understand the world of deaf people and effectively communicate with them. This website teaches conversational phrases in ASL such as basic greetings. Feel free to click on the menu bar to jump to specific sections. At the end, there will be a short quiz testing phrases you just learned.</p>
+
+<p id="introduction" class="text-style-dark-grey">
+    American Sign Language (ASL) is a bridge between hearing people and the deaf group. 
+    By ASL, we understand the world of deaf people and effectively communicate with them. 
+    This website teaches conversational phrases in ASL such as basic greetings. 
+    Feel free to click on the menu bar to jump to specific sections. 
+    At the end, there will be a short quiz testing phrases you just learned.
+</p>
+
 <img src="https://bphawkeye.org/wp-content/uploads/2021/01/IMG_1707-900x900.jpg" id="welcomeimg" height=300px width=300px>
 
-<p id="starttxt">To continue, click the button to explore conversational ASL!</p><button id="start">Let's start!</button>
+<p id="starttxt" class="text-style-dark-grey">
+    To continue, click the button to explore conversational ASL!
+</p>
+
+<button id="start" class="btn btn-accent">Let's start!</button>
+
 {% endblock %}

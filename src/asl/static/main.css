@@ -1,14 +1,36 @@
+@import url(color.css);
+
+body {
+    background-color: var(--base-pc-color);
+}
+
+.text-style-dark-grey {
+    color: var(--dark-pc-color);
+}
+
+.text-title-font {
+    font-family: 'Old Standard TT', serif
+}
+
 #navbar {
-    background-color: #13c2b3;
+    background-color: var(--light-pc-color);
     margin-bottom: 10px;
 }
 
 .nav-link {
-    color: white;
+    color: var(--dark-pc-color);
     font-size: 20px;
     font-family: 'Old Standard TT', serif;
 }
-b {
+
+strong {
+    display:inline-block;
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+    font-size: 50px;
+}
+
+.strong {
     display:inline-block;
     text-align: center;
     font-family: 'Old Standard TT', serif;
@@ -28,11 +50,11 @@ p {
     text-align:center;
 }
 
-button {
+/* button {
     background-color: #13c2b3;
     font-size: 20px;
     color: white;
-}
+} */
 
 .progress_guide {
     margin: 20px;
@@ -47,6 +69,10 @@ button {
     font-size: 20px;
     color: white;
     font-family: 'Old Standard TT', serif;
+}
+
+.button-text-size {
+    font-size: 20px;
 }
 
 .quiz_title {
@@ -84,6 +110,11 @@ button {
     height: 300px
 }
 
+.video_size_2 {
+    width: 300px;
+    height: 200px
+}
+
 .hidden{
     visibility: hidden;
 }
@@ -99,6 +130,7 @@ button {
 
 #greetingtitle, #mannerstitle {
     text-align:center;
+    color: var(--dark-pc-color);
 }
 
 iframe {
@@ -110,7 +142,6 @@ iframe {
 #next, #next2 {
     display: block;
     float: right;
-
 }
 
 #videotips{
@@ -120,3 +151,11 @@ iframe {
     text-align:center;
 }
 
+.list-group-item-quiz {
+    background-color: var(--light-pc-color);
+}
+
+.list-active  {
+    background-color: var(--accent-pc-color);
+    color: var(--white-pc-color);
+}

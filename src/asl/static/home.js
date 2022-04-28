@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#start").on("click", function() {
-        window.location.href = '/greetings/1'
+        window.location.href = '/learn/1'
     })
 
     let today = new Date();
