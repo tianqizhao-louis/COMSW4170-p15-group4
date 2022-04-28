@@ -11,48 +11,48 @@ def index():
     return render_template('home.html')
 
 
-@bp.route('/greetings/<videoId>', methods=["GET"])
-def greeting(videoId):
-    with open('./asl/static/learning.json') as json_file:
-        data = json.load(json_file)
-        lesson = {}
-        for item in data:
-            if item['videoId'] == int(videoId):
-                lesson[item['videoId']] = item
-    return render_template('greetings.html', lesson=lesson)
+# @bp.route('/greetings/<videoId>', methods=["GET"])
+# def greeting(videoId):
+#     with open('./asl/static/learning.json') as json_file:
+#         data = json.load(json_file)
+#         lesson = {}
+#         for item in data:
+#             if item['videoId'] == int(videoId):
+#                 lesson[item['videoId']] = item
+#     return render_template('greetings.html', lesson=lesson)
 
 
-@bp.route('/manners/<videoId>', methods=["GET"])
-def manner(videoId):
-    with open('./asl/static/learning.json') as json_file:
-        data = json.load(json_file)
-        lesson = {}
-        for item in data:
-            if item['videoId'] == int(videoId):
-                lesson[item['videoId']] = item
-    return render_template('manners.html', lesson=lesson)
+# @bp.route('/manners/<videoId>', methods=["GET"])
+# def manner(videoId):
+#     with open('./asl/static/learning.json') as json_file:
+#         data = json.load(json_file)
+#         lesson = {}
+#         for item in data:
+#             if item['videoId'] == int(videoId):
+#                 lesson[item['videoId']] = item
+#     return render_template('manners.html', lesson=lesson)
 
 
-@bp.route('/learning/<videoId>', methods=["GET"])
-def learning(videoId):
-    with open('./asl/static/learning.json') as json_file:
-        data = json.load(json_file)
-        lesson = {}
-        for item in data:
-            if item['videoId'] == int(videoId):
-                lesson[item['videoId']] = item
-    return render_template('learning.html', lesson=lesson)
+# @bp.route('/learning/<videoId>', methods=["GET"])
+# def learning(videoId):
+#     with open('./asl/static/learning.json') as json_file:
+#         data = json.load(json_file)
+#         lesson = {}
+#         for item in data:
+#             if item['videoId'] == int(videoId):
+#                 lesson[item['videoId']] = item
+#     return render_template('learning.html', lesson=lesson)
 
 
-@bp.route('/farewell/<videoId>', methods=["GET"])
-def farewell(videoId):
-    with open('./asl/static/learning.json') as json_file:
-        data = json.load(json_file)
-        lesson = {}
-        for item in data:
-            if item['videoId'] == int(videoId):
-                lesson[item['videoId']] = item
-    return render_template('farewell.html', lesson=lesson)
+# @bp.route('/farewell/<videoId>', methods=["GET"])
+# def farewell(videoId):
+#     with open('./asl/static/learning.json') as json_file:
+#         data = json.load(json_file)
+#         lesson = {}
+#         for item in data:
+#             if item['videoId'] == int(videoId):
+#                 lesson[item['videoId']] = item
+#     return render_template('farewell.html', lesson=lesson)
 
 
 # quiz starting page
@@ -120,3 +120,40 @@ def save_important():
 # just a temporary route, should be fixed by the next iteration
 # @bp.route('/quiz-drag-and-drop', methods=['GET'])
 # def drag_and_drop():
+
+@bp.route('/learn/<int:video_id>')
+def render_test(video_id):
+    item = None
+    
+    with open("./asl/static/learning.json", "r", encoding='utf-8') as json_file:
+        data = json.load(json_file)
+
+    for i in data:
+        if i["videoId"] == video_id:
+            item = i
+    
+    learn_type = item["videoType"]
+    learn_name = item["videoName"]
+
+    type_list = []
+
+    for j in data:
+        if j["videoType"] == learn_type:
+            dict_list_type = {}
+            dict_list_type["videoName"] = j["videoName"]
+            dict_list_type["videoId"] = j["videoId"]
+            type_list.append(dict_list_type)
+    
+    return render_template("learn.html", item=item,
+                            learn_type=learn_type,
+                            learn_name=learn_name,
+                            type_list=type_list)
+
+
+# with open('./asl/static/learning.json') as json_file:
+#         data = json.load(json_file)
+#         lesson = {}
+#         for item in data:
+#             if item['videoId'] == int(videoId):
+#                 lesson[item['videoId']] = item
+#     return render_template('farewell.html', lesson=lesson)

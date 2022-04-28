@@ -1,6 +1,7 @@
 [
     {
         "videoId": 1,
+        "videoType": "greetings",
         "videoName": "Nice to meet you",
         "videoLink": "https://youtube.com/embed/2t_M4JRVq3g?autoplay=1&mute=1",
         "videoTip": "",
@@ -8,6 +9,7 @@
     },
     {
         "videoId": 2,
+        "videoType": "greetings",
         "videoName": "How are you",
         "videoLink": "https://youtube.com/embed/HqJu6PI5T50?autoplay=1&mute=1",
         "videoTip": "",
@@ -15,6 +17,7 @@
     },
     {
         "videoId": 3,
+        "videoType": "greetings",
         "videoName": "Good",
         "videoLink": "https://www.youtube.com/embed/4_gXibyFSGI?autoplay=1&mute=1",
         "videoTip": "",
@@ -22,6 +25,7 @@
     },
     {
         "videoId": 4,
+        "videoType": "greetings",
         "videoName": "Bad",
         "videoLink": "https://www.youtube.com/embed/37lEc2r2gsw?autoplay=1&mute=1",
         "videoTip": "",
@@ -29,6 +33,7 @@
     },
     {
         "videoId": 5,
+        "videoType": "manners",
         "videoName": "Thank you",
         "videoLink": "https://youtube.com/embed/O5Tv5KT1VLs?autoplay=1&mute=1",
         "videoTip": "", 
@@ -36,6 +41,7 @@
     },
     {
         "videoId": 6,
+        "videoType": "manners",
         "videoName": "You are welcome",
         "videoLink": "https://youtube.com/embed/AT8JoDnRY18?autoplay=1&mute=1",
         "videoTip": "The same as thank you!",
@@ -43,6 +49,7 @@
     },
     {
         "videoId": 7,
+        "videoType": "manners",
         "videoName": "Sorry",
         "videoLink": "https://youtube.com/embed/0W_Jbl7mxuU?autoplay=1&mute=1",
         "videoTip": "'Sorry' you use your fist!",
@@ -50,6 +57,7 @@
     },
     {
         "videoId": 8,
+        "videoType": "manners",
         "videoName": "Please",
         "videoLink": "https://www.youtube.com/embed/VBr_hnELRqM?autoplay=1&mute=1",
         "videoTip": "'Please' you use your palm!",
@@ -57,6 +65,7 @@
     },
     {
         "videoId": 9,
+        "videoType": "learning",
         "videoName": "I am learning ASL",
         "videoLink": "https://www.youtube.com/embed/6dsWDK6UnmM?autoplay=1&mute=1",
         "videoTip": "", 
@@ -64,6 +73,7 @@
     },
     {
         "videoId": 10,
+        "videoType": "learning",
         "videoName": "Sorry, I don't understand",
         "videoLink": "https://www.youtube.com/embed/6wP8R9qOX_Q?autoplay=1&mute=1",
         "videoTip": "The first part is the same as 'sorry' you learned before!",
@@ -71,6 +81,7 @@
     },
     {
         "videoId": 11,
+        "videoType": "farewell",
         "videoName": "See you later",
         "videoLink": "https://www.youtube.com/embed/qMBfNdaiBn0?autoplay=1&mute=1",
         "videoTip": "",

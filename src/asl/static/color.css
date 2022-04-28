@@ -51,3 +51,7 @@ fieldset[disabled] .btn-accent.active {
     color: var(--accent-pc-color);
     background-color: var(--white-pc-color);
 }
+
+.btn-accent {
+    color: var(--light-pc-color);
+}
