@@ -96,7 +96,22 @@ def render_test(video_id):
             dict_list_type["videoId"] = j["videoId"]
             type_list.append(dict_list_type)
     
-    return render_template("learn.html", item=item,
-                            learn_type=learn_type,
-                            learn_name=learn_name,
-                            type_list=type_list)
+    return render_template("learn.html", 
+                                item=item,
+                                learn_type=learn_type,
+                                learn_name=learn_name,
+                                type_list=type_list)
+
+
+@bp.route('/quiz/question/<int:questionId>')
+def render_questions(questionId):
+    quiz_item = None
+
+    with open('./asl/static/quiz.json') as json_file:
+        quiz_data = json.load(json_file)
+    
+    for i in quiz_data:
+        if i["questionId"] == questionId:
+            quiz_item = i
+    
+    return render_template("question.html", quiz_item=quiz_item, quiz_data=quiz_data)

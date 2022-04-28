@@ -2,12 +2,7 @@
 
 {% block content %}
 
-<script type="text/javascript" src="{{ url_for('static', filename = 'question.js') }}"></script>
-
-<script>
-    let id = {{id|tojson|safe}}
-    let quiz_data = {{quiz_data|tojson|safe}}
-</script>
+<!-- <script type="text/javascript" src="{{ url_for('static', filename = 'question.js') }}"></script>
 
 <div class = "quiz_title">
     QUIZ
@@ -29,8 +24,123 @@
     <form id = "Next" class = "col-md-2">
         <input type="submit" id = "next_quiz" value = "Next &raquo;" class = "quiz_next">
     </form>
+</div> -->
+
+<script>
+    let quiz_item = {{ quiz_item | tojson | safe }};
+    let quiz_data = {{ quiz_data | tojson | safe }};
+</script>
+
+<div class="row">
+    <div class="col">
+        <h2 class="strong text-style-dark-grey text-title-font">Quiz</h2>
+    </div>
 </div>
 
+<div class="row">
+    <div class="col-2">
+        <ul class="list-group">
+            {% for i in quiz_data %}
+                {% if i['questionId'] < quiz_item['questionId'] %}
+                    <li class="list-group-item disabled">
+                        Question {{i['questionId']}}
+                    </li>
+                {% elif i['questionId'] == quiz_item['questionId'] %}
+                    <li class="list-group-item list-active">
+                        Question {{i['questionId']}}
+                    </li>
+                {% else %}
+                    <li class="list-group-item">
+                        Question {{i['questionId']}}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
 
+    <div class="col-10">
+        {% if quiz_item['questionType'] == 'single-choice' %}
+            <div class="row">
+                <div class="center">
+                    <p class="text-style-dark-grey">Q<span>{{quiz_item["questionId"]}}</span>: What does this gesture mean in English?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center">
+                    <div class="quiz-center">
+                        <iframe class="video_size" src="{{quiz_item['videoLink']}}" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button id="A" class="quiz_choice">A: {{quiz_item['A']}}</button>
+                </div>
+                <div class="col-12">
+                    <button id="B" class="quiz_choice">B: {{quiz_item['B']}}</button>
+                </div>
+                <div class="col-12">
+                    <button id="C" class="quiz_choice">C: {{quiz_item['C']}}</button>
+                </div>
+                <div class="col-12">
+                    <button id="D" class="quiz_choice">A: {{quiz_item['D']}}</button>
+                </div>
+            </div>
+        {% else %}
+            <div class="row">
+                <div class="center">
+                    <p class="text-style-dark-grey">Q<span>{{quiz_item["questionId"]}}</span></p>
+                    <p class="text-style-dark-grey">Please click on the letter button on the left side of each video when making choices.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="row">
+                        <div class="col-1">
+                            <button id='A' class='quiz_choice'> A: </button>
+                        </div>
+                        <div class="col-5">
+                            <iframe class = 'video_size_2' src="{{quiz_item['A']}}?autoplay=0&rel=0" allowfullscreen> </iframe>
+                        </div>
+                        <div class="col-1">
+                            <button id='B' class='quiz_choice'> B: </button>
+                        </div>
+                        <div class="col-5">
+                            <iframe class = 'video_size_2' src="{{quiz_item['B']}}?autoplay=0&rel=0" allowfullscreen> </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="row">
+                        <div class="col-1">
+                            <button id='C' class='quiz_choice'> C: </button>
+                        </div>
+                        <div class="col-5">
+                            <iframe class = 'video_size_2' src="{{quiz_item['C']}}?autoplay=0&rel=0" allowfullscreen> </iframe>
+                        </div>
+                        <div class="col-1">
+                            <button id='D' class='quiz_choice'> D: </button>
+                        </div>
+                        <div class="col-5">
+                            <iframe class = 'video_size_2' src="{{quiz_item['D']}}?autoplay=0&rel=0" allowfullscreen> </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        <div class="row">
+            <div class="col-12">
+                <div class="text-right">
+                    {% if quiz_item["questionId"] != 7 %}
+                        <button type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/quiz/question/{{quiz_item['questionId']+1}}'">Next</button>
+                    {% else %}
+                        <button type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/'">Submit the Quiz</button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

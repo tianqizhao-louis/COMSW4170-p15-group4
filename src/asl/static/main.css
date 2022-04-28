@@ -110,6 +110,11 @@ p {
     height: 300px
 }
 
+.video_size_2 {
+    width: 300px;
+    height: 200px
+}
+
 .hidden{
     visibility: hidden;
 }
@@ -137,7 +142,6 @@ iframe {
 #next, #next2 {
     display: block;
     float: right;
-
 }
 
 #videotips{
@@ -147,3 +151,11 @@ iframe {
     text-align:center;
 }
 
+.list-group-item {
+    background-color: var(--light-pc-color);
+}
+
+.list-active  {
+    background-color: var(--accent-pc-color);
+    color: var(--white-pc-color);
+}
