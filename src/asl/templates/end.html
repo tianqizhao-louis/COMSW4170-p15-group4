@@ -8,18 +8,18 @@
     let number_of_correct_answers = {{ number_of_correct_answers|tojson|safe }}
 </script>
 
-<div class = "quiz_title">
+<div class = "quiz_title text-style-dark-grey">
     The End
 </div>
 
-<div class = "row">
+<div class = "row text-style-dark-grey">
     <div class = "col-md-6">
         <p>Your score is {{ number_of_correct_answers }}/7.</p>
         <p>If you would like to review, feel free to click on the menu bar for specific sections. </p>
         <p>Want to retake the quiz? Click the "Quiz" button on the menu bar.</p>
         <p>Thank you!</p>
 
-        <button id="retake-quiz">Retake the Quiz</button>
+        <button id="retake-quiz" class="btn btn-accent">Retake the Quiz</button>
     </div>
     <div class = "col-md-6">
         <img src="https://i0.wp.com/languagers.com/wp-content/uploads/2020/07/Is-American-Sign-Language-ASL-Universal.jpg?w=900&ssl=1" width="100%" alt="end_img">

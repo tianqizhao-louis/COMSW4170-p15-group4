@@ -2,16 +2,6 @@
 
 {% block content %}
 
-<!-- <script type="text/javascript" src="{{ url_for('static', filename = 'quiz.js') }}"></script>
-
-
-<b class="title">Quiz</b>
-<p>Ready for the quiz? You could click on the menu bar to review again or start quiz!</p>
-<p>Press the button to continue.</p>
-<form id = "formID">
-    <input type="submit" id = "start_quiz" value = "Start Quiz!" class = "quiz_button">
-</form> -->
-
 <div class="row">
     <div class="col">
         <h2 class="strong text-style-dark-grey text-title-font">Quiz</h2>
@@ -27,7 +17,8 @@
 
 <div class="row">
     <div class="col">
-        <button type="button" class="btn btn-accent" onclick="location.href='/question/1'">Start the Quiz!</button>
+        <button type="button" class="btn btn-accent" onclick="location.href='/quiz/question/1'">Start the Quiz!</button>
     </div>
 </div>
+
 {% endblock %}

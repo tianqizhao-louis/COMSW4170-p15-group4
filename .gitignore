@@ -132,3 +132,6 @@ dmypy.json
 .DS_Store
 important_information.json
 user_data.json
+
+visit_time.json
+choices.txt

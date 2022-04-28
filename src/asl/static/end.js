@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $("#retake-quiz").on("click", function () {
-       window.location.href = '/quiz';
+       window.location.href = '/quiz/question/1';
     });
 
 })

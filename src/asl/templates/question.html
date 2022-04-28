@@ -2,29 +2,7 @@
 
 {% block content %}
 
-<!-- <script type="text/javascript" src="{{ url_for('static', filename = 'question.js') }}"></script>
-
-<div class = "quiz_title">
-    QUIZ
-</div>
-
-
-<div class = "center" id = "quiz_div">
-</div>
-
-<div id="dialog" title="">
-    <p></p>
-</div>
-
-<br>
-
-<div class = "row">
-    <div class = "col-md-10"></div>
-
-    <form id = "Next" class = "col-md-2">
-        <input type="submit" id = "next_quiz" value = "Next &raquo;" class = "quiz_next">
-    </form>
-</div> -->
+<script type="text/javascript" src="{{ url_for('static', filename = 'question.js') }}"></script>
 
 <script>
     let quiz_item = {{ quiz_item | tojson | safe }};
@@ -50,7 +28,7 @@
                         Question {{i['questionId']}}
                     </li>
                 {% else %}
-                    <li class="list-group-item">
+                    <li class="list-group-item list-group-item-quiz">
                         Question {{i['questionId']}}
                     </li>
                 {% endif %}
@@ -133,14 +111,18 @@
             <div class="col-12">
                 <div class="text-right">
                     {% if quiz_item["questionId"] != 7 %}
-                        <button type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/quiz/question/{{quiz_item['questionId']+1}}'">Next</button>
+                        <button id="next_quiz" type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/quiz/question/{{quiz_item['questionId']+1}}'">Next</button>
                     {% else %}
-                        <button type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/'">Submit the Quiz</button>
+                        <button id="next_quiz" type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/end'">Submit the Quiz</button>
                     {% endif %}
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<div id="dialog" title="">
+    <p></p>
 </div>
 
 {% endblock %}
