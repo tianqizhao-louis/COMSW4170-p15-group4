@@ -39,12 +39,12 @@
         <br>
         {% if item["videoTip"] != "" %}
             <div class="row">
-                <p id="videotips"> Tip: {{item["videoTip"]}}</p>
+                <p id="videotips" class="text-style-dark-grey"> Tip: {{item["videoTip"]}}</p>
             </div>
         {% endif %}
         {% if item["videoTipLink"] != "" %}
             <div class="row">
-                <p id="videotips"> Tip: </p>
+                <p id="videotips" class="text-style-dark-grey"> Tip: </p>
                 <iframe width="350" height=auto src={{item["videoTipLink"]}} frameborder="0"></iframe>
             </div>
         {% endif %}
