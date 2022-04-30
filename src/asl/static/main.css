@@ -13,12 +13,12 @@ body {
 }
 
 #navbar {
-    background-color: var(--light-pc-color);
+    background-color: var(--dark-pc-color);
     margin-bottom: 10px;
 }
 
 .nav-link {
-    color: var(--dark-pc-color);
+    color: var(--light-pc-color);
     font-size: 20px;
     font-family: 'Old Standard TT', serif;
 }
