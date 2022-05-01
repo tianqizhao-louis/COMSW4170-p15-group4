@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    $("#nav-link-home").addClass("nav-active");
+
     $("#start").on("click", function() {
         window.location.href = '/learn/1'
     })

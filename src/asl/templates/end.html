@@ -2,21 +2,22 @@
 
 {% block content %}
 
-    <script type="text/javascript" src="{{ url_for('static', filename = 'end.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'end.js') }}"></script>
 
 <script>
     let number_of_correct_answers = {{ number_of_correct_answers|tojson|safe }}
 </script>
 
-<div class = "quiz_title text-style-dark-grey">
-    The End
+<div class="row">
+    <div class="col">
+        <h2 class="strong text-style-dark-grey text-title-font">The End</h2>
+    </div>
 </div>
-
 <div class = "row text-style-dark-grey">
     <div class = "col-md-6">
-        <p>Your score is {{ number_of_correct_answers }}/7.</p>
+        <p>Your score is <span class = "highlight">{{ number_of_correct_answers }}/7.</span></p>
         <p>If you would like to review, feel free to click on the menu bar for specific sections. </p>
-        <p>Want to retake the quiz? Click the "Quiz" button on the menu bar.</p>
+        <p>Want to <span class = "highlight">retake the quiz</span>? Click the "Quiz" button on the menu bar.</p>
         <p>Thank you!</p>
 
         <button id="retake-quiz" class="btn btn-accent">Retake the Quiz</button>

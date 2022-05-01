@@ -19,101 +19,109 @@
     <div class="col-2">
         <ul class="list-group">
             {% for i in quiz_data %}
-                {% if i['questionId'] < quiz_item['questionId'] %}
-                    <li class="list-group-item disabled">
-                        Question {{i['questionId']}}
-                    </li>
-                {% elif i['questionId'] == quiz_item['questionId'] %}
-                    <li class="list-group-item list-active">
-                        Question {{i['questionId']}}
-                    </li>
-                {% else %}
-                    <li class="list-group-item list-group-item-quiz">
-                        Question {{i['questionId']}}
-                    </li>
-                {% endif %}
+            {% if i['questionId'] < quiz_item['questionId'] %}
+            <li class="list-group-item disabled">
+                Question {{i['questionId']}}
+            </li>
+            {% elif i['questionId'] == quiz_item['questionId'] %}
+            <li class="list-group-item list-active">
+                Question {{i['questionId']}}
+            </li>
+            {% else %}
+            <li class="list-group-item list-group-item-quiz">
+                Question {{i['questionId']}}
+            </li>
+            {% endif %}
             {% endfor %}
         </ul>
     </div>
 
     <div class="col-10">
         {% if quiz_item['questionType'] == 'single-choice' %}
-            <div class="row">
-                <div class="center">
-                    <p class="text-style-dark-grey">Q<span>{{quiz_item["questionId"]}}</span>: What does this gesture mean in English?</p>
+        <div class="row">
+            <div class="center">
+                <p class="text-style-dark-grey highlight">
+                    Q<span>{{quiz_item["questionId"]}}</span>: What does this gesture mean in English?
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="center">
+                <div class="quiz-center">
+                    <iframe class="video_size" src="{{quiz_item['videoLink']}}" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="row">
-                <div class="center">
-                    <div class="quiz-center">
-                        <iframe class="video_size" src="{{quiz_item['videoLink']}}" allowfullscreen></iframe>
-                    </div>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-9">
+                <button id="A" class="quiz_choice">A: {{quiz_item['A']}}</button>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <button id="A" class="quiz_choice">A: {{quiz_item['A']}}</button>
-                </div>
-                <div class="col-12">
-                    <button id="B" class="quiz_choice">B: {{quiz_item['B']}}</button>
-                </div>
-                <div class="col-12">
-                    <button id="C" class="quiz_choice">C: {{quiz_item['C']}}</button>
-                </div>
-                <div class="col-12">
-                    <button id="D" class="quiz_choice">A: {{quiz_item['D']}}</button>
-                </div>
+            <div class="col-3"></div>
+            <div class="col-9">
+                <button id="B" class="quiz_choice">B: {{quiz_item['B']}}</button>
             </div>
+            <div class="col-3"></div>
+            <div class="col-9">
+                <button id="C" class="quiz_choice">C: {{quiz_item['C']}}</button>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-9">
+                <button id="D" class="quiz_choice">D: {{quiz_item['D']}}</button>
+            </div>
+        </div>
         {% else %}
-            <div class="row">
-                <div class="center">
-                    <p class="text-style-dark-grey">Q<span>{{quiz_item["questionId"]}}</span>: {{quiz_item["question"]}}</p>
-                    <p class="text-style-dark-grey">Please click on the letter button on the left side of each video when making choices.</p>
-                </div>
+        <div class="row">
+            <div class="center">
+                <p class="text-style-dark-grey highlight">
+                    Q<span>{{quiz_item["questionId"]}}</span>: {{quiz_item["question"]}}
+                </p>
+                <p class="text-style-dark-grey">Please click on the letter button on the left side of each video when making choices.</p>
             </div>
-            <div class="row">
-                <div class="col-12 mb-4">
-                    <div class="row">
-                        <div class="col-1">
-                            <button id='A' class='quiz_choice'> A: </button>
-                        </div>
-                        <div class="col-5">
-                            <iframe class = 'video_size_2' src="{{quiz_item['A']}}?autoplay=0&rel=0" allowfullscreen> </iframe>
-                        </div>
-                        <div class="col-1">
-                            <button id='B' class='quiz_choice'> B: </button>
-                        </div>
-                        <div class="col-5">
-                            <iframe class = 'video_size_2' src="{{quiz_item['B']}}?autoplay=0&rel=0" allowfullscreen> </iframe>
-                        </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mb-4">
+                <div class="row">
+                    <div class="col-1 left_pad">
+                        <button id='A' class='quiz_choice'> A: </button>
                     </div>
-                </div>
-                <div class="col-12 mb-4">
-                    <div class="row">
-                        <div class="col-1">
-                            <button id='C' class='quiz_choice'> C: </button>
-                        </div>
-                        <div class="col-5">
-                            <iframe class = 'video_size_2' src="{{quiz_item['C']}}?autoplay=0&rel=0" allowfullscreen> </iframe>
-                        </div>
-                        <div class="col-1">
-                            <button id='D' class='quiz_choice'> D: </button>
-                        </div>
-                        <div class="col-5">
-                            <iframe class = 'video_size_2' src="{{quiz_item['D']}}?autoplay=0&rel=0" allowfullscreen> </iframe>
-                        </div>
+                    <div class="col-5">
+                        <iframe class = 'video_size_2' src="{{quiz_item['A']}}?autoplay=0&rel=0" allowfullscreen> </iframe>
+                    </div>
+                    <div class="col-1 left_pad">
+                        <button id='B' class='quiz_choice'> B: </button>
+                    </div>
+                    <div class="col-5">
+                        <iframe class = 'video_size_2' src="{{quiz_item['B']}}?autoplay=0&rel=0" allowfullscreen> </iframe>
                     </div>
                 </div>
             </div>
+            <div class="col-12 mb-4">
+                <div class="row">
+                    <div class="col-1 left_pad">
+                        <button id='C' class='quiz_choice'> C: </button>
+                    </div>
+                    <div class="col-5">
+                        <iframe class = 'video_size_2' src="{{quiz_item['C']}}?autoplay=0&rel=0" allowfullscreen> </iframe>
+                    </div>
+                    <div class="col-1 left_pad">
+                        <button id='D' class='quiz_choice'> D: </button>
+                    </div>
+                    <div class="col-5">
+                        <iframe class = 'video_size_2' src="{{quiz_item['D']}}?autoplay=0&rel=0" allowfullscreen> </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
         {% endif %}
 
         <div class="row">
             <div class="col-12">
                 <div class="text-right">
                     {% if quiz_item["questionId"] != 7 %}
-                        <button id="next_quiz" type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/quiz/question/{{quiz_item['questionId']+1}}'">Next</button>
+                    <button id="next_quiz" type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/quiz/question/{{quiz_item['questionId']+1}}'">Next</button>
                     {% else %}
-                        <button id="next_quiz" type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/end'">Submit the Quiz</button>
+                    <button id="next_quiz" type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/end'">Submit the Quiz</button>
                     {% endif %}
                 </div>
             </div>
