@@ -27,30 +27,6 @@
   },
   {
     "questionId": 3,
-    "A": "https://youtube.com/embed/BGgFEBNPEbc?autoplay=1&mute=1",
-    "B": "https://youtube.com/embed/giw0ohh5Gv4",
-    "C": "https://youtube.com/embed/09LWuyeximA",
-    "D": "https://youtube.com/embed/tWbE4f44gek",
-    "questionType": "multiple-choice",
-    "question": "Which of the following way is correct to say \"please\"?",
-    "answer": "B",
-    "correct": "You are correct! A means Thank you, C means good, and D means bad. ",
-    "wrong":"The correct answer is B. A means Thank you, C means good, and D means bad. "
-  },
-  {
-    "questionId": 4,
-    "A": "https://youtube.com/embed/09LWuyeximA?autoplay=1&mute=1",
-    "B": "https://youtube.com/embed/tWbE4f44gek",
-    "C": "https://youtube.com/embed/BGgFEBNPEbc",
-    "D": "https://youtube.com/embed/gvJvKH1m8FE",
-    "questionType": "multiple-choice",
-    "question": "Which one of the following is the correct way to respond to \"thank you\"?",
-    "answer": "C",
-    "correct": "You are correct! C could be \"Thank you\" as well as \"You are welcome\". A means good, B means bad, and D means sorry.",
-    "wrong":"The correct answer is C. C could be \"Thank you\" as well as \"You are welcome\". A means good, B means bad, and D means sorry."
-  },
-  {
-    "questionId": 5,
     "videoName": "Nice to meet you",
     "videoLink": "https://youtube.com/embed/GtNxaemPtR0?autoplay=1&mute=1",
     "questionType": "single-choice",
@@ -63,7 +39,7 @@
     "wrong":"The correct answer is B. Notice the \"meet\" sign in the middle."
   },
   {
-    "questionId": 6,
+    "questionId": 4,
     "videoName": "See you later",
     "videoLink": "https://youtube.com/embed/XJtuttpTFwg?autoplay=1&mute=1",
     "questionType": "single-choice",
@@ -76,7 +52,7 @@
     "wrong":"The correct answer is A. You do \"V\" hand pointing to your face and then point to the floor."
   },
   {
-    "questionId": 7,
+    "questionId": 5,
     "videoName": "Sorry, I don't understand",
     "videoLink": "https://youtube.com/embed/Yjp8NKlZAlM?autoplay=1&mute=1",
     "questionType": "single-choice",
@@ -87,5 +63,29 @@
     "answer": "D",
     "correct": "You are correct! You do the sign for \"sorry\" first, and then get your index finger going to the back.",
     "wrong":"The correct answer is D. You do the sign for \"sorry\" first, and then get your index finger going to the back."
+  },
+  {
+    "questionId": 6,
+    "A": "https://youtube.com/embed/BGgFEBNPEbc?autoplay=1&mute=1",
+    "B": "https://youtube.com/embed/giw0ohh5Gv4",
+    "C": "https://youtube.com/embed/09LWuyeximA",
+    "D": "https://youtube.com/embed/tWbE4f44gek",
+    "questionType": "multiple-choice",
+    "question": "Which of the following way is correct to say \"please\"?",
+    "answer": "B",
+    "correct": "You are correct! A means Thank you, C means good, and D means bad. ",
+    "wrong":"The correct answer is B. A means Thank you, C means good, and D means bad. "
+  },
+  {
+    "questionId": 7,
+    "A": "https://youtube.com/embed/09LWuyeximA?autoplay=1&mute=1",
+    "B": "https://youtube.com/embed/tWbE4f44gek",
+    "C": "https://youtube.com/embed/BGgFEBNPEbc",
+    "D": "https://youtube.com/embed/gvJvKH1m8FE",
+    "questionType": "multiple-choice",
+    "question": "Which one of the following is the correct way to respond to \"thank you\"?",
+    "answer": "C",
+    "correct": "You are correct! C could be \"Thank you\" as well as \"You are welcome\". A means good, B means bad, and D means sorry.",
+    "wrong":"The correct answer is C. C could be \"Thank you\" as well as \"You are welcome\". A means good, B means bad, and D means sorry."
   }
 ]

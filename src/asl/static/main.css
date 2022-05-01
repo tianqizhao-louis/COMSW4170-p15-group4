@@ -42,10 +42,20 @@ p {
     font-size: 20px;
 }
 
-#welcomeimg {
-    float: right;
-    display: inline;
+.line-grey {
+    border-color: var(--dark-pc-color);
+    margin-bottom: 0;
+    margin-top: 0;
 }
+
+.sub_title {
+    text-align: center;
+}
+
+#welcomeimg {
+    text-align: center;
+}
+
 #welcome {
     text-align:center;
 }
@@ -61,8 +71,9 @@ p {
     text-align: center;
 }
 
-h3 {
-    text-align: center;
+.link {
+    justify-content: space-between;
+    padding: 5px 10% 5px 0;
 }
 
 /* quiz part css */
@@ -114,8 +125,8 @@ h3 {
 }
 
 .video_size_2 {
-    width: 300px;
-    height: 200px
+    width: 350px;
+    height: 250px
 }
 
 .hidden{
@@ -131,6 +142,11 @@ h3 {
     font-size: 40px;
 }
 
+.highlight {
+    font-weight: bold;
+    font-size: 25px;
+}
+
 #greetingtitle, #mannerstitle {
     text-align:center;
     color: var(--dark-pc-color);
@@ -140,6 +156,10 @@ iframe {
     display: block;
     border-style:none;
     margin: 0 auto;
+}
+
+.left_pad {
+    padding-left: 30px;
 }
 
 #next, #next2 {
@@ -152,6 +172,8 @@ iframe {
     border-style:none;
     margin: 0 auto;
     text-align:center;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .list-group-item-quiz {
@@ -161,4 +183,9 @@ iframe {
 .list-active  {
     background-color: var(--accent-pc-color);
     color: var(--white-pc-color);
+}
+
+.nav-active {
+    background-color: var(--light-pc-color);
+    color: var(--dark-pc-color);
 }

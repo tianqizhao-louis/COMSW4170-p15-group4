@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("#nav-link-quiz").addClass("nav-active");
     $("#next_quiz").prop("disabled", true);
 
 
