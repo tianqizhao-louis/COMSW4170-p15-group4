@@ -3,29 +3,44 @@
 {% block content %}
 
 <script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'end.js') }}"></script>
+
 
 <div id="welcome">
     <strong class="text-style-dark-grey">
         American Sign Language
     </strong>
 </div>
+<hr class = "line-grey">
+<p class="sub_title text-style-dark-grey">
+    a bridge between hearing people and the deaf group
+</p>
 
 <br>
+<div class = "row">
+    <div class = "col-1"></div>
+    <div class = "col-5">
+        <p class="text-style-dark-grey" >
+            <span class = "highlight">Learn</span> conversational ASL phrases:
+            Include 11 short videos of basic ASL gestures.
+        <div class = "sub_title">
+            <button id="start" class="btn btn-accent">Let's start!</button>
+        </div>
+        </p>
+    </div>
+    <div class = "col-5">
+        <p class="text-style-dark-grey">
+            <span class = "highlight">Quiz</span> yourself on ASL phrases:
+            Include multiple choices to identify the meaning of gestures.</p>
+        <div class = "sub_title">
+            <button id="retake-quiz" class="btn btn-accent">Take the Quiz</button>
+        </div>
+    </div>
+    <div class = "col-1"></div>
+</div>
 
-<p id="introduction" class="text-style-dark-grey">
-    American Sign Language (ASL) is a bridge between hearing people and the deaf group. 
-    By ASL, we understand the world of deaf people and effectively communicate with them. 
-    This website teaches conversational phrases in ASL such as basic greetings. 
-    Feel free to click on the menu bar to jump to specific sections. 
-    At the end, there will be a short quiz testing phrases you just learned.
-</p>
-
-<img src="https://bphawkeye.org/wp-content/uploads/2021/01/IMG_1707-900x900.jpg" id="welcomeimg" height=300px width=300px>
-
-<p id="starttxt" class="text-style-dark-grey">
-    To continue, click the button to explore conversational ASL!
-</p>
-
-<button id="start" class="btn btn-accent">Let's start!</button>
+<div id="welcomeimg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/American_Sign_Language_ASL.svg" height=300px width=300px>
+</div>
 
 {% endblock %}

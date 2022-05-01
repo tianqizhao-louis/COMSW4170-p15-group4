@@ -22,11 +22,11 @@
     <div class="col-3">
         <div class="list-group">
             {% for i in type_list %}
-                {% if i["videoId"] == item["videoId"] %}
-                    <button type="button" class="list-group-item list-group-item-action btn-accent active" onclick="location.href='/learn/{{i['videoId']}}'">{{i['videoName']}}</button>
-                {% else %}
-                    <button type="button" class="list-group-item list-group-item-action btn-accent" onclick="location.href='/learn/{{i['videoId']}}'">{{i['videoName']}}</button>
-                {% endif %}
+            {% if i["videoId"] == item["videoId"] %}
+            <button type="button" class="list-group-item list-group-item-action btn-accent active" onclick="location.href='/learn/{{i['videoId']}}'">{{i['videoName']}}</button>
+            {% else %}
+            <button type="button" class="list-group-item list-group-item-action btn-accent" onclick="location.href='/learn/{{i['videoId']}}'">{{i['videoName']}}</button>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
@@ -39,29 +39,32 @@
         </div>
         <br>
         {% if item["videoTip"] != "" %}
-            <div class="row">
-                <p id="videotips" class="text-style-dark-grey"> Tip: {{item["videoTip"]}}</p>
-            </div>
+        <div class="row">
+            <p id="videotips" class="text-style-dark-grey"> Tip: {{item["videoTip"]}}</p>
+        </div>
         {% endif %}
         {% if item["videoTipLink"] != "" %}
-            <div class="row">
-                <p id="videotips" class="text-style-dark-grey"> Tip: </p>
-                <iframe width="350" height=auto src={{item["videoTipLink"]}} frameborder="0"></iframe>
-            </div>
+        <div class="row">
+            <p id="videotips" class="text-style-dark-grey"> Tip:
+                <span>
+                    <iframe width="350" height=auto src={{item["videoTipLink"]}} frameborder="0"></iframe>
+                    </span>
+            </p>
+        </div>
         {% endif %}
         <br>
         <div class="row">
             <div class="col-6">
                 {% if item["videoId"] != 1 %}
-                    <button type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/learn/{{item['videoId']-1}}'">Previous</button>
+                <button type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/learn/{{item['videoId']-1}}'">Previous</button>
                 {% endif %}
             </div>
             <div class="col-6">
                 <div class="text-right">
                     {% if item["videoId"] != 11 %}
-                        <button type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/learn/{{item['videoId']+1}}'">Next</button>
+                    <button type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/learn/{{item['videoId']+1}}'">Next</button>
                     {% else %}
-                        <button type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/quiz'">Take a Quiz!</button>
+                    <button type="button" class="btn btn-accent text-title-font button-text-size" onclick="location.href='/quiz'">Take a Quiz!</button>
                     {% endif %}
                 </div>
             </div>
