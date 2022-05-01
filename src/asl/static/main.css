@@ -184,3 +184,8 @@ iframe {
     background-color: var(--accent-pc-color);
     color: var(--white-pc-color);
 }
+
+.nav-active {
+    background-color: var(--light-pc-color);
+    color: var(--dark-pc-color);
+}
