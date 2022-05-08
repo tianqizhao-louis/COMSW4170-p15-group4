@@ -35,7 +35,7 @@
             <h3 class="text-style-dark-grey text-title-font">{{learn_name}}</h3>
         </div>
         <div class="row">
-            <iframe width="560" height="315" src={{item['videoLink']}} frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src={{item['videoLink']}} frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; un-mute" allowfullscreen></iframe>
         </div>
         <br>
         {% if item["videoTip"] != "" %}
@@ -71,40 +71,5 @@
         </div>
     </div>
 </div>
-<!-- 
-<div class="row">
-    <div class="col-3">
-        <div class="list-group">
-            {% for i in data %}
-                {% if i["videoType"] == learn_type %}
-                    <button type="button" class="list-group-item list-group-item-action btn-accent">{{i["videoName"]}}</button>
-                {% endif %}
-            {% endfor %}
-        </div>
-    </div>
-    <div class="col-9">
-        {% for i in data %}
-            
-        {% endfor %}
-    </div>
-</div> -->
-
-<!-- {% for i in data %}
-
-    {% if i["videoType"] == learn_type %}
-
-    {% endif %}
-
-{% endfor %} -->
-
-<!-- <div class="list-group">
-    <button type="button" class="list-group-item list-group-item-action active btn-accent" aria-current="true">
-      The current button
-    </button>
-    <button type="button" class="list-group-item list-group-item-action btn-accent">A second item</button>
-    <button type="button" class="list-group-item list-group-item-action btn-accent">A third button item</button>
-    <button type="button" class="list-group-item list-group-item-action btn-accent">A fourth button item</button>
-    <button type="button" class="list-group-item list-group-item-action btn-accent" disabled>A disabled button item</button>
-  </div> -->
 
 {% endblock %}
