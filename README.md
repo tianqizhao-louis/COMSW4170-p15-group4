@@ -1,12 +1,17 @@
-# Conversational ASL Application
-### COMS W4170 P15 - Group 4
-Contributors: 
-- Aditi Patil 
-- Oraly Peña Valdez
+# The website for you Learn Conversational ASL Application
+
+## Project Introduction
+
+The project is designed for users to learn some basic ASL conversations. It is built upon Python Flask, jQuery, and Bootstrap.
+
+## Team Members
+
 - Tianqi Zhao 
 - Zehua Zeng
+- Aditi Patil 
+- Oraly Peña Valdez
 
-### Project Quickstart
+## Project Quickstart
 
 Open your terminal, and run the following commands:
 
