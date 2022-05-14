@@ -1,4 +1,4 @@
-# The website for you Learn Conversational ASL Application
+# The website for you to learn Conversational ASL
 
 ## Project Introduction
 
